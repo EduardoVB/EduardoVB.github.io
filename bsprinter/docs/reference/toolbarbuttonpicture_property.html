@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177277067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177277067-1');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<title>ToolbarButtonPicture Property</title>
+<meta name="DESCRIPTION" content="ToolbarButtonPicture Property" />
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+<header>
+  <br>
+  <a href="../../">Home</a> > <a href="../index.html">BSPrinter documentation</a> > <a href="index.html">Reference</a>
+  <br><br>
+</header>
+<h1>ToolbarButtonPicture Property</h1>
+<p>Applies to: <a href="printpreview_control.html">PrintPreview</a>, <a href="iprinterex_object.html">IPrinterEx</a> object</p>
+<p><table><tbody>    <tr>    <td>&nbsp&nbspType: <b>Picture</b>&nbsp&nbsp</td>    </tr>    <tr>    </tr>    <tr>    <td>&nbsp&nbspAdditional parameter(s):&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspRequired&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>ToolbarIconIdentifier</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbsp<a href="bstoolbariconidentifierconstants_enumeration.html">BSToolbarIconIdentifierConstants</a>&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspRequired&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>SizeIdentifier</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbsp<a href="bsiconimagesizeidentifierconstants_enumeration.html">BSIconImageSizeIdentifierConstants</a>&nbsp&nbsp</td>    </tr>    <tr>    </tr>  </tbody></table></p><br>
+<h2>Description:</h2>
+<p>Returns or sets the images that will be used as the toolbar icons in the Print Preview dialog box.<br>
+They can be bitmap or icon format.<br>
+In case of bitmaps, the color for transparency is &HFF00FF or if this color is not present, the first pixel (at 0,0 position) will be used as the transparent color.<br>
+<br>
+The SizeIdentifier parameter identifies the size that is being set or retrieved.<br>
+When changed, normally all 5 images need to be supplied, one at a time.<br>
+<br>
+Note: why 5 sizes of icons? The toolbar buttons have the options of three sizes: small, medium and big (see <a href="toolbariconssize_property.html">ToolbarIconsSize</a>).<br>
+In addition to that, if the client program is manifested as DPI aware, the component automatically handles the icon sizes for each DPI setting. It handles these two features with 5 different icon sizes: 20x20 pixels, 24x24 pixels, 30x30 pixels, 36x36 pixels and 44x44 pixels.<br>
+<br>
+If the client program is not DPI aware, only the 20x20 pixels, 24x24 pixels and 30x30 pixels images are needed.<br>
+If <a href="toolbariconssize_property.html">ToolbarIconsSize</a> is set to a setting where the user can't change the size of the toolbar buttons, but the program is manifested as DPI aware, only three will be used (depending on the size if the toolbar buttons, small, medium or big, they can be 20x20/24x24/30x30 for small, 24x24/30x30/36x36 for medium or 30x30/36x36/44x44 for big.<br>
+And if the program is not DPI aware and <a href="toolbariconssize_property.html">ToolbarIconsSize</a> is set to a setting where the user can't change the toolbar buttons size, only one will be used. (20x20 for small icons, 24x24 for medium or 30x30 for big).<br>
+<br>
+<h3>See Also:</h3><br>
+<a href="toolbariconssize_property.html">ToolbarIconsSize</a> property</p><br>
+<br><br><br>
+<div class="flex-footer">
+  <div style="flex-basis:40%"><a href="http://www.balkesoft.com"><img src="bslogo.png" alt="www.balkesoft.com" border="0"></a></div>
+  <div style="flex-basis:40%">&copy; 2020-2021 Balkesoft</div>
+</div>
+</body>
+</html>

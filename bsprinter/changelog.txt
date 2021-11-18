@@ -1,0 +1,42 @@
+Release 2021-10-31:
+- Bux fix in PrintQuality setting when the value is not supported by the device.
+Release 2021-10-21:
+- Improvement in Printers collection.
+Release 2021-09-23:
+- Minor corrections in License property page.
+Release 2021-09-07:
+- Improvement in PrintWindow method, when printing controls that are partially or not visible on the form.
+- Internal code improvements related to remove dependency on VB6 (now it uses APIs for some things it previously relied on VB6 DLLs).
+Release 2021-08-07:
+- Added global Printer object and Printers collection.
+Release 2021-08-04:
+- Removed "Demo" note when used from class modules and bas modules.
+Release 2021-08-03:
+- Fixed bug when used from non-VB6 environments, added check for App.NonModalAllowed.
+Release 2021-06-09:
+- Samples projects updated
+- Fix regarding Page numbers font when scale was < 40%
+Release 2021-05-18:
+- Now the Printer.Print method supports Unicode
+- Fixed bug in Print method regarding tabs positions when ScaleLeft <> 0
+- Fixed bug in Print method regarding circumstances where there are CrLf and Tabs
+
+Release 2021-05-03:
+- Added property FontKerning
+- Bug fix regarding setting the initial printer through code.
+- Bug fix regarding changing paper size
+- Hided ReleasePrinterObject method in IPrinterEx interface.
+- Correction in TextHeight in Twips
+- Fix in Print method when the line exeeded the width of the page. To meet original Printer object behavior, it does not continue in another line.
+- Fix in PaintPicture with opcode other than vbSrcCopy due to Windows 10 bug introduced in MS update KB5000802 that was fixed in update KB5001649, but this last one was made an optional update.
+- Fixed font adjustment in tooltips.
+
+Release 2021-01-27:
+- Fix in the progress dialog caption that appears when the report has many pages.
+- Fix in Printer.TrackDefault property to meet original Printer behavior.
+- Fixed bug when a PrintPreview control was placed on a parent MDI form.
+- When printing a MSFlexGrid that had no fixed rows (header), a line was printed in the upper part. Fixed.
+- When printing a RichTextBox with alignment to "justify" (not supported by the VB6 control directly but it is supported by API calls) the font kerning is needed to be disabled. Now it is.
+- Added a new sample project to show how to set the default page orientation (Sample 8).
+- CapturePrinterObject and ReleasePrinterObject methods are now hidden, not necessary any more.
+- Change in the way that default Printer properties can be set.

@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177277067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177277067-1');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<title>SetPrintingProcedure Method</title>
+<meta name="DESCRIPTION" content="SetPrintingProcedure Method" />
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+<header>
+  <br>
+  <a href="../../">Home</a> > <a href="../index.html">BSPrinter documentation</a> > <a href="index.html">Reference</a>
+  <br><br>
+</header>
+<h1>SetPrintingProcedure Method</h1>
+<p>Applies to: <a href="iprinterex_object.html">IPrinterEx</a> object</p>
+<p><table><tbody>    <tr>    <td>&nbsp&nbspReturn Type:&nbsp&nbsp</td>    <td>&nbsp&nbspNone.&nbsp&nbsp</td>    </tr><tr><td>&nbsp</td></tr>    <tr>    <td>&nbsp&nbspParameter(s):&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspRequired&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>Object</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspObject&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspRequired&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>ProcedureName</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspString&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspOptional&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>ParametersArray</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspVariant&nbsp&nbsp</td>    </tr>    <tr>    </tr>  </tbody></table></p><br>
+<h2>Description:</h2>
+<p>Using the <a href="iprinterex_object.html">IPrinterEx</a> object instead of a <a href="printpreview_control.html">PrintPreview</a> control is possible to have print preview capabilities from a <b>Class module</b> where no controls can be placed, or even from forms if you prefer.<br>
+Alternatively you can have the <a href="preparereport_event.html">PrepareReport</a> event by setting the <a href="printerexevents_object.html">PrinterExEvents</a> object returned by the <a href="events_property.html">Events</a> property.<br>
+<br>
+The <a href="iprinterex_object.html">IPrinterEx</a> is the interface of a global object that can be obtained with the <a href="printpreview_property.html">PrintPreview</a> global property.<br>
+Using this object, there are two ways to call <b>the printing procedure</b>, one is using events, for that see <a href="events_property.html">Events</a> property. The other is to set <b>the printing procedure</b> with this method.<br>
+<br>
+Parameters explained:<br>
+<br>
+<b>Object</b>: this must be a reference to the class module, form or object where <b>the printing procedure</b> is.<br>
+<br>
+<b>ProcedureName</b>: the name of <b>the printing procedure</b>. This procedure <b>must be Public</b>.<br>
+<br>
+<b>ParametersArray</b>: if <b>the printing procedure</b> has parameters, they can come in an array here.<br>
+<br>
+<u>Example without parameters</u>:<br>
+<br>
+<pre>
+Private Sub Class_Initialize()
+    PrintPreview.SetPrintingProcedure Me, "MyPrintingProcedure"
+End Sub
+
+Public Sub PrintPreviewMyReport() ' This is the method that will be called to show the print preview dialog with the report
+    PrintPreview.ShowPreview
+End Sub
+
+<b>Public</b> Sub MyPrintingProcedure()
+    Printer.Print "Hello Word"
+    ' continue with the printing code
+End Sub
+</pre><br>
+<br>
+<u>Example with parameters</u>:<br>
+<br>
+<pre>
+Public Sub PrintPreviewMyReport1()
+    PrintPreview.SetPrintingProcedure Me, "MyPrintingProcedure", Array(1, 14) ' ReportNumber = 1, TitleFontSize = 14
+    PrintPreview.ShowPreview
+End Sub
+
+Public Sub PrintPreviewMyReport2()
+    PrintPreview.SetPrintingProcedure Me, "MyPrintingProcedure", Array(2, 18) ' ReportNumber = 1, TitleFontSize = 14
+    PrintPreview.ShowPreview
+End Sub
+
+<b>Public</b> Sub MyPrintingProcedure(ReportNumber As Long, TitleFontSize As Long)
+    If ReportNumber = 1 Then
+        Printer.FontSize = TitleFontSize
+        Printer.Print "Report 1"
+        Printer.FontSize = 12
+        Printer.Print "Hello Word"
+        ' continue with the printing code
+    Else
+        Printer.FontSize = TitleFontSize
+        Printer.Print "Report 2"
+        Printer.FontSize = 12
+        Printer.Print "Hello Word"
+        ' continue with the printing code
+    End If
+End Sub
+</pre><br>
+<br>
+Of course you can send the parameters in other ways in your program, this is just a possibility.<br>
+</p><br>
+<br><br><br>
+<div class="flex-footer">
+  <div style="flex-basis:40%"><a href="http://www.balkesoft.com"><img src="bslogo.png" alt="www.balkesoft.com" border="0"></a></div>
+  <div style="flex-basis:40%">&copy; 2020-2021 Balkesoft</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML_DIZ_INFO>
+  <MASTER_PAD_VERSION_INFO>
+    <MASTER_PAD_VERSION>4.0</MASTER_PAD_VERSION>
+    <MASTER_PAD_EDITOR>RoboSoft 4.0.797</MASTER_PAD_EDITOR>
+    <MASTER_PAD_EDITOR_URL>http://robosoft.rudenko.com</MASTER_PAD_EDITOR_URL>
+    <MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+  </MASTER_PAD_VERSION_INFO>
+  <RoboSoft>
+    <Company_UIN>CMP-0149061D535</Company_UIN>
+    <Company_Description></Company_Description>
+    <Product_UIN>APP-0149067D237</Product_UIN>
+    <Search_String>BSPrinter Print Preview for VB6</Search_String>
+    <Publish_on_CD>FALSE</Publish_on_CD>
+    <RSProductType></RSProductType>
+    <Press_Release_Search_String></Press_Release_Search_String>
+    <NewsFeed_Search_String></NewsFeed_Search_String>
+    <Search_Engine_Search_String></Search_Engine_Search_String>
+    <Web_Directories_Search_String></Web_Directories_Search_String>
+    <Search_String_Unique></Search_String_Unique>
+    <Comments_For_Reviewer></Comments_For_Reviewer>
+    <Backlink></Backlink>
+  </RoboSoft>
+  <Company_Info>
+    <Company_Name>Balkesoft</Company_Name>
+    <Address_1>Brasil 166 A</Address_1>
+    <Address_2></Address_2>
+    <City_Town>Cordoba</City_Town>
+    <State_Province>Cordoba</State_Province>
+    <Zip_Postal_Code>5000</Zip_Postal_Code>
+    <Country>Argentina</Country>
+    <Company_WebSite_URL>http://www.balkesoft.com/</Company_WebSite_URL>
+    <Contact_Info>
+      <Contact_First_Name>Javier</Contact_First_Name>
+      <Contact_Last_Name>Balkenende</Contact_Last_Name>
+      <Contact_Email>ssoftware@gmail.com</Contact_Email>
+      <Author_First_Name>Javier</Author_First_Name>
+      <Author_Last_Name>Balkenende</Author_Last_Name>
+      <Author_Email>ssoftware@gmail.com</Author_Email>
+    </Contact_Info>
+    <Support_Info>
+      <Sales_Email>ssoftware@gmail.com</Sales_Email>
+      <Support_Email>ssoftware@gmail.com</Support_Email>
+      <General_Email>ssoftware@gmail.com</General_Email>
+      <Sales_Phone>+54-3514685891</Sales_Phone>
+      <Support_Phone>+54-3514685891</Support_Phone>
+      <General_Phone>+54-3514685891</General_Phone>
+      <Fax_Phone>+54-3514685891</Fax_Phone>
+    </Support_Info>
+    <GooglePlusPage></GooglePlusPage>
+    <LinkedinPage></LinkedinPage>
+    <TwitterCompanyPage></TwitterCompanyPage>
+    <FacebookCompanyPage></FacebookCompanyPage>
+    <CompanyStorePage></CompanyStorePage>
+  </Company_Info>
+  <Affiliates>
+    <Affiliates_FORM>Y</Affiliates_FORM>
+    <Affiliates_FORM_VER>1.4</Affiliates_FORM_VER>
+    <Affiliates_VERSION>1.4</Affiliates_VERSION>
+    <Affiliates_URL>http://www.asp-shareware.org/pad/extensions/Affiliates.htm</Affiliates_URL>
+    <Affiliates_ShareIt_Order_Page></Affiliates_ShareIt_Order_Page>
+    <Affiliates_ShareIt_Vendor_ID></Affiliates_ShareIt_Vendor_ID>
+    <Affiliates_ShareIt_Product_ID></Affiliates_ShareIt_Product_ID>
+    <Affiliates_Information_Page></Affiliates_Information_Page>
+    <Affiliates_Avangate_Order_Page></Affiliates_Avangate_Order_Page>
+    <Affiliates_Avangate_Vendor_ID></Affiliates_Avangate_Vendor_ID>
+    <Affiliates_Avangate_Product_ID></Affiliates_Avangate_Product_ID>
+    <Affiliates_Avangate_Maximum_Commission_Rate></Affiliates_Avangate_Maximum_Commission_Rate>
+    <Affiliates_Cleverbridge_Order_Page></Affiliates_Cleverbridge_Order_Page>
+    <Affiliates_Cleverbridge_Vendor_ID></Affiliates_Cleverbridge_Vendor_ID>
+    <Affiliates_Cleverbridge_Product_ID></Affiliates_Cleverbridge_Product_ID>
+    <Affiliates_Cleverbridge_Maximum_Commission_Rate></Affiliates_Cleverbridge_Maximum_Commission_Rate>
+    <Affiliates_clixGalore_Order_Page></Affiliates_clixGalore_Order_Page>
+    <Affiliates_clixGalore_Vendor_ID></Affiliates_clixGalore_Vendor_ID>
+    <Affiliates_clixGalore_Product_ID></Affiliates_clixGalore_Product_ID>
+    <Affiliates_clixGalore_Maximum_Commission_Rate></Affiliates_clixGalore_Maximum_Commission_Rate>
+    <Affiliates_CommissionJunction_Order_Page></Affiliates_CommissionJunction_Order_Page>
+    <Affiliates_CommissionJunction_Vendor_ID></Affiliates_CommissionJunction_Vendor_ID>
+    <Affiliates_CommissionJunction_Product_ID></Affiliates_CommissionJunction_Product_ID>
+    <Affiliates_CommissionJunction_Maximum_Commission_Rate></Affiliates_CommissionJunction_Maximum_Commission_Rate>
+    <Affiliates_LinkShare_Order_Page></Affiliates_LinkShare_Order_Page>
+    <Affiliates_LinkShare_Vendor_ID></Affiliates_LinkShare_Vendor_ID>
+    <Affiliates_LinkShare_Product_ID></Affiliates_LinkShare_Product_ID>
+    <Affiliates_LinkShare_Maximum_Commission_Rate></Affiliates_LinkShare_Maximum_Commission_Rate>
+    <Affiliates_OneNetworkDirect_Order_Page></Affiliates_OneNetworkDirect_Order_Page>
+    <Affiliates_OneNetworkDirect_Vendor_ID></Affiliates_OneNetworkDirect_Vendor_ID>
+    <Affiliates_OneNetworkDirect_Product_ID></Affiliates_OneNetworkDirect_Product_ID>
+    <Affiliates_OneNetworkDirect_Maximum_Commission_Rate></Affiliates_OneNetworkDirect_Maximum_Commission_Rate>
+    <Affiliates_Plimus_Order_Page></Affiliates_Plimus_Order_Page>
+    <Affiliates_Plimus_Vendor_ID></Affiliates_Plimus_Vendor_ID>
+    <Affiliates_Plimus_Product_ID></Affiliates_Plimus_Product_ID>
+    <Affiliates_Plimus_Maximum_Commission_Rate></Affiliates_Plimus_Maximum_Commission_Rate>
+    <Affiliates_Shareasale_Order_Page></Affiliates_Shareasale_Order_Page>
+    <Affiliates_Shareasale_Vendor_ID></Affiliates_Shareasale_Vendor_ID>
+    <Affiliates_Shareasale_Product_ID></Affiliates_Shareasale_Product_ID>
+    <Affiliates_Shareasale_Maximum_Commission_Rate></Affiliates_Shareasale_Maximum_Commission_Rate>
+    <Affiliates_BMTMicro_Order_Page></Affiliates_BMTMicro_Order_Page>
+    <Affiliates_BMTMicro_Vendor_ID></Affiliates_BMTMicro_Vendor_ID>
+    <Affiliates_BMTMicro_Product_ID></Affiliates_BMTMicro_Product_ID>
+    <Affiliates_BMTMicro_Maximum_Commission_Rate></Affiliates_BMTMicro_Maximum_Commission_Rate>
+    <Affiliates_DigiBuy_Order_Page></Affiliates_DigiBuy_Order_Page>
+    <Affiliates_DigiBuy_Vendor_ID></Affiliates_DigiBuy_Vendor_ID>
+    <Affiliates_DigiBuy_Product_ID></Affiliates_DigiBuy_Product_ID>
+    <Affiliates_DigiBuy_Maximum_Commission_Rate></Affiliates_DigiBuy_Maximum_Commission_Rate>
+    <Affiliates_DigitalCandle_Order_Page></Affiliates_DigitalCandle_Order_Page>
+    <Affiliates_DigitalCandle_Vendor_ID></Affiliates_DigitalCandle_Vendor_ID>
+    <Affiliates_DigitalCandle_Product_ID></Affiliates_DigitalCandle_Product_ID>
+    <Affiliates_DigitalCandle_Maximum_Commission_Rate></Affiliates_DigitalCandle_Maximum_Commission_Rate>
+    <Affiliates_Emetrix_Order_Page></Affiliates_Emetrix_Order_Page>
+    <Affiliates_Emetrix_Vendor_ID></Affiliates_Emetrix_Vendor_ID>
+    <Affiliates_Emetrix_Product_ID></Affiliates_Emetrix_Product_ID>
+    <Affiliates_Emetrix_Maximum_Commission_Rate></Affiliates_Emetrix_Maximum_Commission_Rate>
+    <Affiliates_eSellerate_Order_Page></Affiliates_eSellerate_Order_Page>
+    <Affiliates_eSellerate_Vendor_ID></Affiliates_eSellerate_Vendor_ID>
+    <Affiliates_eSellerate_Product_ID></Affiliates_eSellerate_Product_ID>
+    <Affiliates_eSellerate_Maximum_Commission_Rate></Affiliates_eSellerate_Maximum_Commission_Rate>
+    <Affiliates_Kagi_Order_Page></Affiliates_Kagi_Order_Page>
+    <Affiliates_Kagi_Vendor_ID></Affiliates_Kagi_Vendor_ID>
+    <Affiliates_Kagi_Product_ID></Affiliates_Kagi_Product_ID>
+    <Affiliates_Kagi_Maximum_Commission_Rate></Affiliates_Kagi_Maximum_Commission_Rate>
+    <Affiliates_NorthStarSol_Order_Page></Affiliates_NorthStarSol_Order_Page>
+    <Affiliates_NorthStarSol_Vendor_ID></Affiliates_NorthStarSol_Vendor_ID>
+    <Affiliates_NorthStarSol_Product_ID></Affiliates_NorthStarSol_Product_ID>
+    <Affiliates_NorthStarSol_Maximum_Commission_Rate></Affiliates_NorthStarSol_Maximum_Commission_Rate>
+    <Affiliates_Order1_Order_Page></Affiliates_Order1_Order_Page>
+    <Affiliates_Order1_Vendor_ID></Affiliates_Order1_Vendor_ID>
+    <Affiliates_Order1_Product_ID></Affiliates_Order1_Product_ID>
+    <Affiliates_Order1_Maximum_Commission_Rate></Affiliates_Order1_Maximum_Commission_Rate>
+    <Affiliates_Osolis_Order_Page></Affiliates_Osolis_Order_Page>
+    <Affiliates_Osolis_Vendor_ID></Affiliates_Osolis_Vendor_ID>
+    <Affiliates_Osolis_Product_ID></Affiliates_Osolis_Product_ID>
+    <Affiliates_Osolis_Maximum_Commission_Rate></Affiliates_Osolis_Maximum_Commission_Rate>
+    <Affiliates_Regnet_Order_Page></Affiliates_Regnet_Order_Page>
+    <Affiliates_Regnet_Vendor_ID></Affiliates_Regnet_Vendor_ID>
+    <Affiliates_Regnet_Product_ID></Affiliates_Regnet_Product_ID>
+    <Affiliates_Regnet_Maximum_Commission_Rate></Affiliates_Regnet_Maximum_Commission_Rate>
+    <Affiliates_Regnow_Order_Page></Affiliates_Regnow_Order_Page>
+    <Affiliates_Regnow_Vendor_ID></Affiliates_Regnow_Vendor_ID>
+    <Affiliates_Regnow_Product_ID></Affiliates_Regnow_Product_ID>
+    <Affiliates_Regnow_Maximum_Commission_Rate></Affiliates_Regnow_Maximum_Commission_Rate>
+    <Affiliates_Regsoft_Order_Page></Affiliates_Regsoft_Order_Page>
+    <Affiliates_Regsoft_Vendor_ID></Affiliates_Regsoft_Vendor_ID>
+    <Affiliates_Regsoft_Product_ID></Affiliates_Regsoft_Product_ID>
+    <Affiliates_Regsoft_Maximum_Commission_Rate></Affiliates_Regsoft_Maximum_Commission_Rate>
+    <Affiliates_ShareIt_Maximum_Commission_Rate></Affiliates_ShareIt_Maximum_Commission_Rate>
+    <Affiliates_SWReg_Order_Page></Affiliates_SWReg_Order_Page>
+    <Affiliates_SWReg_Vendor_ID></Affiliates_SWReg_Vendor_ID>
+    <Affiliates_SWReg_Product_ID></Affiliates_SWReg_Product_ID>
+    <Affiliates_SWReg_Maximum_Commission_Rate></Affiliates_SWReg_Maximum_Commission_Rate>
+    <Affiliates_V-Share_Order_Page></Affiliates_V-Share_Order_Page>
+    <Affiliates_V-Share_Vendor_ID></Affiliates_V-Share_Vendor_ID>
+    <Affiliates_V-Share_Product_ID></Affiliates_V-Share_Product_ID>
+    <Affiliates_V-Share_Maximum_Commission_Rate></Affiliates_V-Share_Maximum_Commission_Rate>
+    <Affiliates_VFree_Order_Page></Affiliates_VFree_Order_Page>
+    <Affiliates_VFree_Vendor_ID></Affiliates_VFree_Vendor_ID>
+    <Affiliates_VFree_Product_ID></Affiliates_VFree_Product_ID>
+    <Affiliates_VFree_Maximum_Commission_Rate></Affiliates_VFree_Maximum_Commission_Rate>
+    <Affiliates_Yaskifo_Order_Page></Affiliates_Yaskifo_Order_Page>
+    <Affiliates_Yaskifo_Vendor_ID></Affiliates_Yaskifo_Vendor_ID>
+    <Affiliates_Yaskifo_Product_ID></Affiliates_Yaskifo_Product_ID>
+    <Affiliates_Yaskifo_Maximum_Commission_Rate></Affiliates_Yaskifo_Maximum_Commission_Rate>
+    <Affiliates_iPortis_Order_Page></Affiliates_iPortis_Order_Page>
+    <Affiliates_iPortis_Vendor_ID></Affiliates_iPortis_Vendor_ID>
+    <Affiliates_iPortis_Product_ID></Affiliates_iPortis_Product_ID>
+    <Affiliates_iPortis_Maximum_Commission_Rate></Affiliates_iPortis_Maximum_Commission_Rate>
+  </Affiliates>
+  <NewsFeed>
+    <NewsFeed_FORM>Y</NewsFeed_FORM>
+    <NewsFeed_VERSION>1.0</NewsFeed_VERSION>
+    <NewsFeed_URL>http://Submit-Everywhere.com/extensions/NewsFeed.htm</NewsFeed_URL>
+    <NewsFeed_DESCRIPTION>This PAD extension allows you to add your RSS and Atom news feeds info into your PAD file. This info can be used by RSS feed submission software or by feed directories themselves.</NewsFeed_DESCRIPTION>
+    <NewsFeed_Type>RSS 0.90</NewsFeed_Type>
+    <NewsFeed_Language>English</NewsFeed_Language>
+    <NewsFeed_Purpose>News</NewsFeed_Purpose>
+    <NewsFeed_Author_Email>ssoftware@gmail.com</NewsFeed_Author_Email>
+    <NewsFeed_Author_First_Name>Javier</NewsFeed_Author_First_Name>
+    <NewsFeed_Author_Last_Name>Balkenende</NewsFeed_Author_Last_Name>
+    <NewsFeed_Feed_URL></NewsFeed_Feed_URL>
+    <NewsFeed_Site_Name></NewsFeed_Site_Name>
+    <NewsFeed_Site_URL></NewsFeed_Site_URL>
+    <NewsFeed_Title></NewsFeed_Title>
+    <NewsFeed_Description_70></NewsFeed_Description_70>
+    <NewsFeed_Description_250></NewsFeed_Description_250>
+  </NewsFeed>
+  <Site>
+    <Site_FORM>Y</Site_FORM>
+    <Site_VERSION>1.0</Site_VERSION>
+    <Site_URL>http://Submit-Everywhere.com/extensions/Site.htm</Site_URL>
+    <Site_DESCRIPTION>This PAD extension allows you to add your site info into your PAD file. This info can be used by site submission software or by web directories themselves.</Site_DESCRIPTION>
+    <Site_Contact_Email>ssoftware@gmail.com</Site_Contact_Email>
+    <Site_Contact_First_Name>Javier</Site_Contact_First_Name>
+    <Site_Contact_Last_Name>Balkenende</Site_Contact_Last_Name>
+    <Site_Site_Title>BSPrinter Print Preview for VB6</Site_Site_Title>
+    <Site_Site_URL>http://www.balkesoft.com/bsprinter/</Site_Site_URL>
+    <Site_Description_100>ActiveX component that adds Print Preview to Visual Basic 6 Printer object</Site_Description_100>
+    <Site_Description_250>ActiveX component that adds Print Preview capability to Visual Basic 6 programs by replacing the Printer object. Also in Windows 10 it can save PDF files.</Site_Description_250>
+    <Site_Description_450>ActiveX component that adds Print Preview capability to Visual Basic 6 programs by replacing the Printer object. Also in Windows 10 it can save PDF files. It is easy to use and can be implemented in existing programs as well as in new developments.</Site_Description_450>
+    <Site_Keywords>print, preview, activex, visual, basic, vb, vb6, printer, printing, pdf, save, ocx, component, control, 6.0, 6, programming, active, x, components</Site_Keywords>
+  </Site>
+  <Program_Info>
+    <Program_Target_Platform>Windows</Program_Target_Platform>
+    <File_Info>
+      <Automatically_Detect_File_Size>Y</Automatically_Detect_File_Size>
+      <File_Size_Bytes>4728068</File_Size_Bytes>
+      <File_Size_K>4618</File_Size_K>
+      <File_Size_MB>4.50</File_Size_MB>
+      <Filename_Versioned></Filename_Versioned>
+      <Filename_Previous></Filename_Previous>
+      <Filename_Generic></Filename_Generic>
+      <Filename_Long></Filename_Long>
+    </File_Info>
+    <Program_Name>BSPrinter Print Preview for VB6</Program_Name>
+    <Program_Version>1.8</Program_Version>
+    <Program_Release_Month>09</Program_Release_Month>
+    <Program_Release_Day>23</Program_Release_Day>
+    <Program_Release_Year>2021</Program_Release_Year>
+    <Program_Cost_Dollars>0</Program_Cost_Dollars>
+    <Program_Type>Freeware</Program_Type>
+    <Program_Release_Status>Major update</Program_Release_Status>
+    <Program_Install_Support>Install and Uninstall</Program_Install_Support>
+    <Program_OS_Support>Win2000,WinXP,Win7 x32,Win7 x64,Windows 8,Windows 10,WinServer,WinOther,Windows2000,Windows2003,Windows Server 2000,Windows Server 2003,Windows Server 2008,Windows Server 2008r2,Windows Server 2012,Windows Tablet PC Edition 2005,Windows Media Center Edition 2005,WinVista,Windows Vista Starter,Windows Vista Home Basic,Windows Vista Home Premium,Windows Vista Business,Windows Vista Enterprise,Windows Vista Ultimate,WinVista x64,Windows Vista Home Basic x64,Windows Vista Home Premium x64,Windows Vista Business x64,Windows Vista Enterprise x64,Windows Vista Ultimate x64</Program_OS_Support>
+    <Program_Language>English,Arabic,Chinese,ChineseSimplified,French,German,Greek,Hebrew,Italian,Portuguese,Spanish</Program_Language>
+    <Program_Change_Info>New release</Program_Change_Info>
+    <Program_System_Requirements>Windows, Visual Basic 6</Program_System_Requirements>
+    <Program_Category_Class>Development::Basic, VB, VB DotNet</Program_Category_Class>
+    <Expire_Info>
+      <Has_Expire_Info>N</Has_Expire_Info>
+      <Expire_Based_On>Days</Expire_Based_On>
+      <Expire_Count></Expire_Count>
+      <Expire_Other_Info></Expire_Other_Info>
+      <Expire_Month></Expire_Month>
+      <Expire_Day></Expire_Day>
+      <Expire_Year></Expire_Year>
+    </Expire_Info>
+    <Program_Categories>Visual Basic,ActiveX,Components,Development,Printing</Program_Categories>
+    <Limitations>It is fully functional, but without a license key is prints a logo on each page.</Limitations>
+    <Program_Cost_Other_Code></Program_Cost_Other_Code>
+    <Program_Cost_Other></Program_Cost_Other>
+    <Awards></Awards>
+    <Program_Specific_Category></Program_Specific_Category>
+    <Includes_JAVA_VM></Includes_JAVA_VM>
+    <Includes_VB_Runtime></Includes_VB_Runtime>
+    <Includes_DirectX></Includes_DirectX>
+    <FacebookProductPage></FacebookProductPage>
+    <GooglePlusProductPage></GooglePlusProductPage>
+  </Program_Info>
+  <PAD_Certification_Promotion>
+    <Apply_For_Certification>N</Apply_For_Certification>
+  </PAD_Certification_Promotion>
+  <Dynamic_PAD>
+    <Dynamic_Distributive>N</Dynamic_Distributive>
+  </Dynamic_PAD>
+  <ASBMPlannerID1stRound>5</ASBMPlannerID1stRound>
+  <Issues>9</Issues>
+  <Press_Release>
+    <Headline>BSPrinter: New component for VB6 developers that adds Print Preview ability and saves PDF files</Headline>
+    <Summary>BSPrinter is a new component that allows to have Print Preview capacity and saving PDF files in VB6 by using the Printer object.</Summary>
+    <Press_Release>&lt;font face="Arial"&gt;
+&lt;h2&gt;Print preview and save PDF files in Visual Basic 6&lt;/h2&gt;&lt;br&gt;
+Visual Basic 6 is old, but still very powerful and many developers use it.&lt;br&gt;
+Now a new component came around, &lt;b&gt;BSPrinter&lt;/b&gt;, that adds the ability to have &lt;a href="https://www.balkesoft.com/bsprinter/"&gt;&lt;b&gt;print preview&lt;/b&gt; with VB6's &lt;b&gt;Printer object&lt;/b&gt;&lt;/a&gt;.&lt;br&gt;
+&lt;br&gt;
+It works with total backward compatibility with the original Printer object.&lt;br&gt;
+It also automates things like adding page numbers and setting margins, features that VB6 never had before (by itself).&lt;br&gt;
+&lt;br&gt;
+Other features that this new component adds is the ability to &lt;a href="https://www.balkesoft.com/bsprinter/docs/print-msflexgrid-mshflexgrid.html"&gt;print flex grids (MSFlexGrid, MSHFlexGrid and compatibles)&lt;/a&gt; with just one line of code.&lt;br&gt;
+Also it can &lt;a href="https://www.balkesoft.com/bsprinter/docs/print-richtextbox-rtb.html"&gt;print Rich textboxes (RichTextBox)&lt;/a&gt; in the same way. Off course, all with print preview.&lt;br&gt;
+And another interesting feature is that it can &lt;a href="https://www.balkesoft.com/bsprinter/docs/save-pdf-files-with-vb6.html"&gt;save PDF files&lt;/a&gt; (on Windows 10) without user interaction, so the developer only needs to focus on the content, and print everything like before using the &lt;b&gt;Printer object&lt;/b&gt;, but now with these new features available.&lt;br&gt;
+&lt;br&gt;
+The result is a program much improved from the end user point of view.&lt;br&gt;
+It has a cost, but how many more licenses of your program would be sold with these improvements?&lt;br&gt;
+&lt;br&gt;
+For Visual Basic 6 developers it worths a try.&lt;br&gt;&lt;br&gt;
+&lt;br&gt;
+&lt;h2&gt;How to implement it?&lt;/h2&gt;&lt;br&gt;
+The first step is to install BSPrinter or to manually register the OCX on Windows.&lt;br&gt;
+You can &lt;a href="https://www.balkesoft.com/bsprinter/download.html"&gt;download it from this page&lt;/a&gt;.&lt;br&gt;
+Next step is to open the VB6 IDE and add the component to a project.&lt;br&gt;
+Then, add a &lt;b&gt;PrintPreview&lt;/b&gt; control to a form.&lt;br&gt;
+Double click on it and you'll see the &lt;i&gt;PrepareReport&lt;/i&gt; event procedure.&lt;br&gt;
+Call the printing procedure from there, or add the code on this event code.&lt;br&gt;
+You can use any of the Printer.* methods, or the new one offered by the component in PrintPreview1.*.&lt;br&gt;
+A full specification can be found at &lt;a href="https://www.balkesoft.com/bsprinter/docs/reference/index.html"&gt;BSPrinter reference page&lt;/a&gt;.&lt;br&gt;
+&lt;br&gt;
+The installer also installs many sample projects, they can be found oin the program folder under [Program files]/BSPrinter or [Program files x86]/BSPrinter on Windows 64 bits.&lt;br&gt;
+&lt;br&gt;
+They are:&lt;br&gt;
+&lt;br&gt;
+1 - Hello World&lt;br&gt;
+2 - Positioning on page&lt;br&gt;
+3 - Print FlexGrid&lt;br&gt;
+4 - Print RichTextBox&lt;br&gt;
+5 - Save PDF file&lt;br&gt;
+6 - Full backward compatibility&lt;br&gt;
+7 - Show more pages by default&lt;br&gt;
+8 - Print using PrintEx method (for printing Unicode and more)&lt;br&gt;
+9 - Allow or disallow user actions&lt;br&gt;
+10 - Show margins&lt;br&gt;
+(and more)&lt;br&gt;&lt;/font&gt;</Press_Release>
+    <Press_Release_Plain>Print preview and save PDF files in Visual Basic 6
+
+Visual Basic 6 is old, but still very powerful and many developers use it.
+Now a new component came around, BSPrinter, that adds the ability to have print preview with VB6's Printer object.
+
+It works with total backward compatibility with the original Printer object.
+It also automates things like adding page numbers and setting margins, features that VB6 never had before (by itself).
+
+Other features that this new component adds is the ability to print frex grids (MSFlexGrid, MSHFlexGrid and compatibles) with just one line of code.
+Also it can print Rich textboxes in the same way. Off course, all with print preview.
+And another interesting feature is that it can save PDF files (on Windows 10) without user interaction, so the developer only needs to focus on the content, and print everything like before using the Printer object, but now with these new features available.
+
+The result is a program much improved from the end user point of view.
+It has a cost, but how many more licenses of your program would be sold with these improvements?
+
+For Visual Basic 6 developers it worths a try.
+
+
+How to implement it?
+
+The first step is to install BSPrinter or to manually register the OCX on Windows.
+You can download it from this page: http://www.balkesoft.com/bsprinter/download.html
+Next step is to open the VB6 IDE and add the component to a project.
+Then, add a PrintPreview control to a form.
+Double click on it and you'll see the PrepareReport event procedure.
+Call the printing procedure from there, or add the code on this event code.
+You can use any of the Printer.* methods, or the new one offered by the component in PrintPreview1.*.
+A full specification can be found at this page: http://www.balkesoft.com/bsprinter/docs/reference/index.html
+
+The installer also installs many sample projects, they can be found oin the program folder under [Program files]/BSPrinter or [Program files x86]/BSPrinter on Windows 64 bits.
+
+They are:
+
+1 - Hello World
+2 - Positioning on page
+3 - Print FlexGrid
+4 - Print RichTextBox
+5 - Save PDF file
+6 - Full backward compatibility
+7 - Show more pages by default
+8 - Print using PrintEx method (for printing Unicode and more)
+9 - Allow or disallow user actions
+10 - Show margins
+(and more)</Press_Release_Plain>
+    <Keywords>software,development,visual, basic,vb,vb6,6,windows,print,preview,printer,activex,component,save,pdf, msflexgrid,mshflexgrid,richtextbox,rtb,rich, textbox,flex,grid,new,component,active-x,reports,report,maker,designer</Keywords>
+    <Related_URL>http://www.balkesoft.com/bsprinter/</Related_URL>
+  </Press_Release>
+  <ASBMPlannerID2ndRound>6</ASBMPlannerID2ndRound>
+  <Web_Info>
+    <Application_URLs>
+      <Application_Info_URL>http://www.balkesoft.com/bsprinter/</Application_Info_URL>
+      <Application_Order_URL>http://www.balkesoft.com/bsprinter/download.html</Application_Order_URL>
+      <Application_Screenshot_URL>http://www.balkesoft.com/bsprinter/img/scr1_800x430.jpg</Application_Screenshot_URL>
+      <Application_Icon_URL>http://www.balkesoft.com/bsprinter/img/32x32icon.gif</Application_Icon_URL>
+      <Application_XML_File_URL>http://www.balkesoft.com/pad/bsprinter.xml</Application_XML_File_URL>
+    </Application_URLs>
+    <Download_URLs>
+      <Primary_Download_URL>http://www.balkesoft.com/bsprinter/downloads/Install_BSPrinter.zip</Primary_Download_URL>
+      <Secondary_Download_URL>http://www.balkesoft.com/bsprinter/downloads/BSPrinter_OCX_with_samples.zip</Secondary_Download_URL>
+      <Additional_Download_URL_1></Additional_Download_URL_1>
+      <Additional_Download_URL_2></Additional_Download_URL_2>
+    </Download_URLs>
+  </Web_Info>
+  <Permissions>
+    <Distribution_Permissions>The setup program or the ocx file can not be uploaded to a web site for download, but the file posted in our web site can be linked from another web site.
+The setup program may be included in any CD compilation.
+If you have a licence key, it can not be included in a CD-ROM compilation or posted in a web site, or other actions like these as described in the End User agreement.</Distribution_Permissions>
+    <EULA>End-User License Agreement (EULA) of BSPrinter
+
+This End-User License Agreement ("EULA") is a legal agreement between you and Balkesoft
+This EULA agreement governs your acquisition and use of our BSPrinter software ("Software") directly from Balkesoft or indirectly through a Balkesoft authorized reseller or distributor (a "Reseller").
+Please read this EULA agreement carefully before completing the installation process and using the BSPrinter software. It provides a license to use the BSPrinter software and contains warranty information and liability disclaimers.
+If you install the component for a free trial of the BSPrinter software, this EULA agreement will also govern that trial. By clicking "accept" or installing and/or using the BSPrinter component, you are confirming your acceptance of the Software and agreeing to become bound by the terms of this EULA agreement.
+If you are entering into this EULA agreement on behalf of a company or other legal entity, you represent that you have the authority to bind such entity and its affiliates to these terms and conditions. If you do not have such authority or if you do not agree with the terms and conditions of this EULA agreement, do not install or use the Software, and you must not accept this EULA agreement.
+This EULA agreement shall apply only to the Software supplied by Balkesoft herewith regardless of whether other software is referred to or described herein. The terms also apply to any Balkesoft updates, supplements, Internet-based services, and support services for the Software, unless other terms accompany those items on delivery. If so, those terms apply. 
+
+License Grant
+Balkesoft hereby grants you to use the component by as many developers of your organization as you purchased in the license. The license is non-transferable, non-exclusive. You can use the BSPrinter component on your devices in accordance with the terms of this EULA agreement.
+You are permitted to load the BSPrinter component on devices under your control. You are responsible for ensuring your devices meet the minimum requirements of the BSPrinter software.
+The use and distribution of the component with your applications is royalty-free.
+
+You are not permitted to:
+&amp;#10625;	Edit, alter, modify, adapt, or otherwise change the whole or any part of the Software nor decompile, disassemble or reverse engineer the Software or attempt to do any such things.
+&amp;#10625;	Resell, lend, rent or donate to a third party the Software license.
+&amp;#10625;	Allow any third party to use the Software license on your behalf if not included in the license purchased.
+&amp;#10625;	Compile a program with the license on behalf of someone or a company not included in the license.
+&amp;#10625;	Use the Software in any way which breaches any applicable local, national or international law.
+&amp;#10625;	Use the Software for any purpose that is a breach of this EULA agreement.
+
+Intellectual Property and Ownership
+Balkesoft shall at all times retain ownership of the Software as originally downloaded by you and all subsequent downloads of the Software by you. The Software (and the copyright, and other intellectual property rights of whatever nature in the Software, including any modifications made thereto) are and shall remain the property of Balkesoft.
+Balkesoft reserves the right to grant licences to use the Software to third parties.
+
+Limitation of Liability
+Notwithstanding any damages that You might incur, the entire liability of Balkesoft and any of its suppliers under any provision of this Agreement and your exclusive remedy for all of the foregoing shall be limited to the amount actually paid by You for the Software.
+To the maximum extent permitted by applicable law, in no event shall Balkesoft or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever (including, but not limited to, damages for loss of profits, loss of data or other information, for business interruption, for personal injury, loss of privacy arising out of or in any way related to the use of or inability to use the Software, third-party software and/or third-party hardware used with the Software, or otherwise in connection with any provision of this Agreement), even if Balkesoft or any supplier has been advised of the possibility of such damages and even if the remedy fails of its essential purpose.
+Some states/jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so the above limitation or exclusion may not apply to You.
+
+Termination
+This EULA agreement is effective from the date you first use the Software and shall continue until terminated. You may terminate it at any time upon written notice to Balkesoft.
+It will also terminate immediately if you fail to comply with any term of this EULA agreement. Upon such termination, the licenses granted by this EULA agreement will immediately terminate and you agree to stop all access and use of the Software. The provisions that by their nature continue and survive will survive any termination of this EULA agreement.
+
+Governing Law
+This EULA agreement, and any dispute arising out of or in connection with this EULA agreement, shall be governed by and construed in accordance with the laws of United States of America, Europe and Argentina.</EULA>
+  </Permissions>
+  <AppStore>
+    <AppStore_AppID></AppStore_AppID>
+    <AppStore_Category></AppStore_Category>
+    <AppStore_Info_URL></AppStore_Info_URL>
+    <AppStore_Download_URL></AppStore_Download_URL>
+    <AppStore_Promo_Code_1></AppStore_Promo_Code_1>
+    <AppStore_Promo_Code_2></AppStore_Promo_Code_2>
+    <AppStore_Promo_Code_3></AppStore_Promo_Code_3>
+    <AppStore_Supported_Devices></AppStore_Supported_Devices>
+    <AppStore_Other_Applications></AppStore_Other_Applications>
+    <AppStore_Advantages_And_Unique_Features></AppStore_Advantages_And_Unique_Features>
+    <AppStore_Awards_And_Ratings></AppStore_Awards_And_Ratings>
+  </AppStore>
+  <Program_Descriptions>
+    <English>
+      <Keywords>print, preview, activex, visual, basic, vb, vb6, printer, printing, pdf, save, ocx, component, control, 6.0, 6, programming, active, x, components</Keywords>
+      <Char_Desc_45>Component to add Print Preview to VB6</Char_Desc_45>
+      <Char_Desc_80>ActiveX component that adds Print Preview to Visual Basic 6 Printer object</Char_Desc_80>
+      <Char_Desc_250>ActiveX component that adds Print Preview capability to Visual Basic 6 programs by replacing the Printer object. Also in Windows 10 it can save PDF files.</Char_Desc_250>
+      <Char_Desc_450>ActiveX component that adds Print Preview capability to Visual Basic 6 programs by replacing the Printer object. Also in Windows 10 it can save PDF files. It is easy to use and can be implemented in existing programs as well as in new developments.</Char_Desc_450>
+      <Char_Desc_2000>ActiveX component that adds Print Preview capability to Visual Basic 6 programs by replacing the Printer object. Also in Windows 10 it can save PDF files. It is easy to use and can be implemented in existing programs as well as in new developments. The Printer object replacement functions as a drop-in replacement of VB's original Printer object.
+It also adds features like watermark printing, automatic page number addition, margin management, and much more.</Char_Desc_2000>
+    </English>
+  </Program_Descriptions>
+</XML_DIZ_INFO>

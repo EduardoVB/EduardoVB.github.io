@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177277067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177277067-1');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<title>StartingPageNumber Property</title>
+<meta name="DESCRIPTION" content="StartingPageNumber Property" />
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+<header>
+  <br>
+  <a href="../../">Home</a> > <a href="../index.html">BSPrinter documentation</a> > <a href="index.html">Reference</a>
+  <br><br>
+</header>
+<h1>StartingPageNumber Property</h1>
+<p>Applies to: <a href="printpreview_control.html">PrintPreview</a>, <a href="iprinterex_object.html">IPrinterEx</a> object</p>
+<p>Type: <b>Long</b></p><br>
+<h2>Description:</h2>
+<p>Returns or sets the page number to be printed on the first page, or with a negative value on which page the page numbering will start.<br>
+<br>
+The default value is <b>1</b>.<br>
+<br>
+Note: If the value is less than 1, then it will set on wich page the page numbers will start.<br>
+For example, if this property is set to -2, the page numbers will start on the fouth page:<br>
+Fist page: -2, no page number, second page: -1, no page number either, third page: 0, still no page number, fourth page: 1, the page number is printed here, the page numbering starts on this page.<br>
+<br>
+<h3>See Also:</h3><a href="printpagenumbers_property.html">PrintPageNumbers</a> property<br>
+<a href="showfirstpagenumber_property.html">ShowFirstPageNumber</a> property<br>
+<a href="frompage_property.html">FromPage</a> property</p><br>
+<br><br><br>
+<div class="flex-footer">
+  <div style="flex-basis:40%"><a href="http://www.balkesoft.com"><img src="bslogo.png" alt="www.balkesoft.com" border="0"></a></div>
+  <div style="flex-basis:40%">&copy; 2020-2021 Balkesoft</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,811 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177277067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177277067-1');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<title>BSUserInterfaceTextIDConstants Enumeration</title>
+<meta name="DESCRIPTION" content="BSUserInterfaceTextIDConstants Enumeration" />
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<style>.table2, .table2 th, .table2 td {border: 2px solid #e0e0e0;border-collapse: collapse;} .table2 th, .table2 td {padding: 8px;text-align: left;}</style><body>
+<header>
+  <br>
+  <a href="../../">Home</a> > <a href="../index.html">BSPrinter documentation</a> > <a href="index.html">Reference</a>
+  <br><br>
+</header>
+<h1>BSUserInterfaceTextIDConstants Enumeration</h1>
+<p>Identifiers for the caption texts and strings used in the component to show to the final user.<br>
+In each constant comment is the default English caption.<br>
+<br>
+When translating to a new language, many of them are standard captions that can be found with <a href="https://www.microsoft.com/en-us/language/search">Microsoft teminology search</a>.<br>
+<br>
+Note: This enum is not provided by the component. You will need to declare the constants in your code to use them.</p><br>
+<table class="table table2">
+  <tr>
+    <td><b>bsPPUI_General_CloseButton_Caption</b> =     </td>
+    <td>2000    </td>
+    <td><a style="color:#0040A0"> ' English text: "Close"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIt is a generic caption for the 'Close' button.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_OKButton_Caption</b> =     </td>
+    <td>2100    </td>
+    <td><a style="color:#0040A0"> ' English text: "OK"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIt is a generic caption for the 'OK' button.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_CancelButton_Caption</b> =     </td>
+    <td>2200    </td>
+    <td><a style="color:#0040A0"> ' English text: "Cancel"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIt is a generic caption for the 'Cancel' button.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_Unnamed_FileName</b> =     </td>
+    <td>2300    </td>
+    <td><a style="color:#0040A0"> ' English text: "Unnamed"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDefault file name when the user did not supply a name.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_PageNumbersFormatStrings_Count</b> =     </td>
+    <td>4000    </td>
+    <td><a style="color:#0040A0"> ' English text: "21"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThis must be the number of format strings for the page numbers that will be available. It must be a numeric value.&nbsp&nbsp&nbsp&nbspThe format strings will be fetched with ID <b>bsPPUI_General_PageNumbersFormatString_Item</b> to N -1, where N is the number specified in <b>bsPPUI_General_PageNumbersFormatStrings_Count</b>.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_PageNumbersFormatString_Item</b> =     </td>
+    <td>4100    </td>
+    <td><a style="color:#0040A0"> ' English text: "{#}"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBase ID for the page numbers format strings. The format strings start with this ID the first one and go to N -1 for the last one, where N is the number supplied for TextID <b>bsPPUI_General_PageNumbersFormatStrings_Count</b>.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTo see the different format string for English, read the description of the <a href="pagenumbersformat_property.html">PageNumbersFormat</a> property.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_PrintDocumentTooLongWarning_PageText</b> =     </td>
+    <td>4400    </td>
+    <td><a style="color:#0040A0"> ' English text: "Document too long to print complete, done to the page {####}."&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThis text will be printed in a page added at the end of the report when attempting to print more than 2000 pages.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{####} is a placeholder, do not modify it.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_PrintDocumentTooLongWarning_MsgBoxWarning</b> =     </td>
+    <td>4500    </td>
+    <td><a style="color:#0040A0"> ' English text: "Document too long, will not be printed completely."&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThis message appears to the user when attempting to print more than 2000 pages in a report.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_PrinterNotAvailable1</b> =     </td>
+    <td>4600    </td>
+    <td><a style="color:#0040A0"> ' English text: "The printer '{Printer_Name}' is not available at this time, would you like to print to the default printer?"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThis message will be displayed when the user attempts to print to a printer device that is no longer available.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{Printer_Name} is a placeholder for the printer device name, do not modify it.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_PrinterNotAvailable2</b> =     </td>
+    <td>4700    </td>
+    <td><a style="color:#0040A0"> ' English text: "The printer '{Printer_Name}'  is not available at this time, cannot print."&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThis message will be displayed when the user attempts to print to a printer device that is no longer available and no other printer is available or installed.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{Printer_Name} is a placeholder for the printer device name, do not modify it.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_PageNumbers_Dont_Exists_Message</b> =     </td>
+    <td>4800    </td>
+    <td><a style="color:#0040A0"> ' English text: "The specified page number(s) do not exist in the document."&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThis message will be displayed when the user on the <b>Print dialog</b> specifies one or more page numbers that do not exist in the report.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_SaveToFile_PrinterNotInstalled</b> =     </td>
+    <td>4900    </td>
+    <td><a style="color:#0040A0"> ' English text:  "The '{Printer_Name}' printer driver is not installed on this computer. Cannot save the file."&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThis message will be displayed to the user when, with the <a href="savetofile_method.html">SaveToFile</a> method, the printer specified by the <b>DeviceNameToUse</b> parameter is not installed on the computer.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{Printer_Name} is a placeholder for the printer device name, do not modify it.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Basic</b> =     </td>
+    <td>6000    </td>
+    <td><a style="color:#0040A0"> ' English text: "Basic"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Basic_Gray</b> =     </td>
+    <td>6100    </td>
+    <td><a style="color:#0040A0"> ' English text: "Basic Grey"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Basic_Red</b> =     </td>
+    <td>6200    </td>
+    <td><a style="color:#0040A0"> ' English text: "Basic Red"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Basic_Green</b> =     </td>
+    <td>6300    </td>
+    <td><a style="color:#0040A0"> ' English text: "Basic Green"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Basic_Yellow</b> =     </td>
+    <td>6400    </td>
+    <td><a style="color:#0040A0"> ' English text: "Basic Yellow"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Modern</b> =     </td>
+    <td>8000    </td>
+    <td><a style="color:#0040A0"> ' English text: "Modern"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Modern_Gray</b> =     </td>
+    <td>8100    </td>
+    <td><a style="color:#0040A0"> ' English text: "Modern Grey"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Modern_Red</b> =     </td>
+    <td>8200    </td>
+    <td><a style="color:#0040A0"> ' English text: "Modern Red"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Modern_Green</b> =     </td>
+    <td>8300    </td>
+    <td><a style="color:#0040A0"> ' English text: "Modern Green"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Modern_Yellow</b> =     </td>
+    <td>8400    </td>
+    <td><a style="color:#0040A0"> ' English text: "Modern Yellow"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Grid</b> =     </td>
+    <td>10000    </td>
+    <td><a style="color:#0040A0"> ' English text: "Grid"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Grid_Gray</b> =     </td>
+    <td>10100    </td>
+    <td><a style="color:#0040A0"> ' English text: "Grid Grey"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Grid_Red</b> =     </td>
+    <td>10200    </td>
+    <td><a style="color:#0040A0"> ' English text: "Grid Red"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Grid_Green</b> =     </td>
+    <td>10300    </td>
+    <td><a style="color:#0040A0"> ' English text: "Grid Green"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Grid_Yellow</b> =     </td>
+    <td>10400    </td>
+    <td><a style="color:#0040A0"> ' English text: "Grid Yellow"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Closed</b> =     </td>
+    <td>12000    </td>
+    <td><a style="color:#0040A0"> ' English text: "Closed"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Closed_Gray</b> =     </td>
+    <td>12100    </td>
+    <td><a style="color:#0040A0"> ' English text: "Closed Grey"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Closed_Red</b> =     </td>
+    <td>12200    </td>
+    <td><a style="color:#0040A0"> ' English text: "Closed Red"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Closed_Green</b> =     </td>
+    <td>12300    </td>
+    <td><a style="color:#0040A0"> ' English text: "Closed Green"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Closed_Yellow</b> =     </td>
+    <td>12400    </td>
+    <td><a style="color:#0040A0"> ' English text: "Closed Yellow"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Horizontal</b> =     </td>
+    <td>14000    </td>
+    <td><a style="color:#0040A0"> ' English text: "Horizontal"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Horizontal_Gray</b> =     </td>
+    <td>14100    </td>
+    <td><a style="color:#0040A0"> ' English text: "Horizontal Grey"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Horizontal_Red</b> =     </td>
+    <td>14200    </td>
+    <td><a style="color:#0040A0"> ' English text: "Horizontal Red"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Horizontal_Green</b> =     </td>
+    <td>14300    </td>
+    <td><a style="color:#0040A0"> ' English text: "Horizontal Green"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Horizontal_Yellow</b> =     </td>
+    <td>14400    </td>
+    <td><a style="color:#0040A0"> ' English text: "Horizontal Yellow"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Free</b> =     </td>
+    <td>16000    </td>
+    <td><a style="color:#0040A0"> ' English text: "Free"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Free_Gray</b> =     </td>
+    <td>16100    </td>
+    <td><a style="color:#0040A0"> ' English text: "Free Grey"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Free_Red</b> =     </td>
+    <td>16200    </td>
+    <td><a style="color:#0040A0"> ' English text: "Free Red"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Free_Green</b> =     </td>
+    <td>16300    </td>
+    <td><a style="color:#0040A0"> ' English text: "Free Green"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_General_GridReportStyleNames_Free_Yellow</b> =     </td>
+    <td>16400    </td>
+    <td><a style="color:#0040A0"> ' English text: "Free Yellow"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName for this style shown in the FormatOptions dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_Caption</b> =     </td>
+    <td>18000    </td>
+    <td><a style="color:#0040A0"> ' English text: "Print preview"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIt is the title bar caption that the <b>Print Preview dialog box</b> will display when the <a href="previewdialogcaption_property.html">PreviewDialogCaption</a> property is not set.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_mnuView2p_Caption</b> =     </td>
+    <td>18100    </td>
+    <td><a style="color:#0040A0"> ' English text: "View 2 pages"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIs the text of the menu item to display two pages.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_mnuView3p_Caption</b> =     </td>
+    <td>18200    </td>
+    <td><a style="color:#0040A0"> ' English text: "View 3 pages"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIs the text of the menu item to display three pages.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_mnuView6p_Caption</b> =     </td>
+    <td>18300    </td>
+    <td><a style="color:#0040A0"> ' English text: "View 6 pages"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIs the text of the menu item to display six pages.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_mnuView12p_Caption</b> =     </td>
+    <td>18400    </td>
+    <td><a style="color:#0040A0"> ' English text: "View 12 pages"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIs the text of the menu item to display twelve pages.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_mnuTopIconsAuto_Caption</b> =     </td>
+    <td>18500    </td>
+    <td><a style="color:#0040A0"> ' English text: "Automatic icon size"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIs the text of the menu item to set the icon size to automatic.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_mnuTopIconsSmall_Caption</b> =     </td>
+    <td>18600    </td>
+    <td><a style="color:#0040A0"> ' English text: "Small icons"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIs the text of the menu item to set the icon size to small.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_mnuTopIconsMedium_Caption</b> =     </td>
+    <td>18700    </td>
+    <td><a style="color:#0040A0"> ' English text: "Medium icons"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIs the text of the menu item to set the icon size to medium.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_mnuTopIconsLarge_Caption</b> =     </td>
+    <td>18800    </td>
+    <td><a style="color:#0040A0"> ' English text: "Large icons"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIs the text of the menu item to set the icon size to large.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_Icons_Size_Small</b> =     </td>
+    <td>18900    </td>
+    <td><a style="color:#0040A0"> ' English text: "small"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIs the text that will appear in brackets after the text of <b> bsPPUI_PreviewDialog_mnuTopIconsAuto_Caption </b> when the aotomatic size of icons is set to small.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_Icons_Size_Medium</b> =     </td>
+    <td>19000    </td>
+    <td><a style="color:#0040A0"> ' English text: "medium"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIs the text that will appear in brackets after the text of <b> bsPPUI_PreviewDialog_mnuTopIconsAuto_Caption </b> when the aotomatic size of icons is set to medium.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_Icons_Size_Large</b> =     </td>
+    <td>19100    </td>
+    <td><a style="color:#0040A0"> ' English text: "large"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIs the text that will appear in brackets after the text of <b> bsPPUI_PreviewDialog_mnuTopIconsAuto_Caption </b> when the aotomatic size of icons is set to large.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_mnuTopShowBottomToolbar_Caption</b> =     </td>
+    <td>19200    </td>
+    <td><a style="color:#0040A0"> ' English text: "Show bottom bar"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIs the text of the menu item to set whether to show a bottom bar for the page navigation buttons or not.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_mnuTopShowMargins_Caption</b> =     </td>
+    <td>19300    </td>
+    <td><a style="color:#0040A0"> ' English text: "Show margins"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIs the text of the menu item to set whether to show the margins on the pages or not.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_CurrentlySelected</b> =     </td>
+    <td>19400    </td>
+    <td><a style="color:#0040A0"> ' English text: "selected"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIs a text used in brackets to identify, in some circumstances, that an item is selected.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_CurrentlyShown</b> =     </td>
+    <td>19500    </td>
+    <td><a style="color:#0040A0"> ' English text: "currently shown"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIs a text used in brackets to identify, in some circumstances, that an element is currently shown.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_lblPageOrientation_Caption</b> =     </td>
+    <td>19600    </td>
+    <td><a style="color:#0040A0"> ' English text: "Page orientation:"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThe text of the label for 'Page orientation:' at the toolbar.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_lblView_Caption</b> =     </td>
+    <td>19700    </td>
+    <td><a style="color:#0040A0"> ' English text: "View:"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThe text of the label for 'View:' at the toolbar.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_lblScale_Caption</b> =     </td>
+    <td>19800    </td>
+    <td><a style="color:#0040A0"> ' English text: "Scale:"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThe text of the label for 'Scale:' at the toolbar.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_CurrentPage_Singular_Caption</b> =     </td>
+    <td>19900    </td>
+    <td><a style="color:#0040A0"> ' English text: "Page: {#} of {##}"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTemplate used when displaying one page, that is shown at the toolbar (on the bottom or top toolbar, depending on the setting of <a href="showbottomtoolbar_property.html">ShowBottomToolbar</a> property and user setting).&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{#} is the placeholder for the current page number that is on the screen, and {##} for the total page count.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_CurrentPage_Plural_Caption</b> =     </td>
+    <td>20000    </td>
+    <td><a style="color:#0040A0"> ' English text: "Pages: {#} of {##}"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTemplate used when displaying more than one page, that is shown at the toolbar (on the bottom or top toolbar, depending on the setting of <a href="showbottomtoolbar_property.html">ShowBottomToolbar</a> property and user setting).&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{#} is the placeholder for the current pages numbers that are on the screen, and {##} for the total page count.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_PreparingDoc_Caption_LoadingPreview</b> =     </td>
+    <td>20200    </td>
+    <td><a style="color:#0040A0"> ' English text: "Loading preview..."&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIt is the status text at the bottom in the <b>Print Preview dialog box</b> that is displayed while the report is prepared.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_PreparingDoc_Caption_PreparingDocument</b> =     </td>
+    <td>20300    </td>
+    <td><a style="color:#0040A0"> ' English text: "Preparing document..."&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIt is an aternative status text that appear at the bottom in the <b>Print Preview dialog box</b> in some circumstances while the report is prepared.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_cmdPrintInDefaultPrinter_Caption</b> =     </td>
+    <td>20400    </td>
+    <td><a style="color:#0040A0"> ' English text: "Print to {Printer_Name}"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption of the button that appears at the toolbar when the <a href="quickprintbuttonvisible_property.html">QuickPrintButtonVisible</a> property is set to <b>True</b> and there is enough space to show it.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{Printer_Name} is a placeholder for the printer device name, do not modify it.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_cmdClose_Caption</b> =     </td>
+    <td>20500    </td>
+    <td><a style="color:#0040A0"> ' English text: "Close print preview"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption of the button that appears at the toolbar to close the <b>Print pPreview dialog</b>.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_ToolTipText_ToolbarButton_Print</b> =     </td>
+    <td>20600    </td>
+    <td><a style="color:#0040A0"> ' English text: "Print"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text of the toolbar button to print.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_ToolTipText_ToolbarButton_PageSetup</b> =     </td>
+    <td>20700    </td>
+    <td><a style="color:#0040A0"> ' English text: "Page setup"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text of the toolbar button to show the <b>Page setup dialog</b>.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_ToolTipText_ToolbarButton_Auxiliary</b> =     </td>
+    <td>20800    </td>
+    <td><a style="color:#0040A0"> ' English text: ""&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text of the toolbar "Auxiliary" button that is shown when <a href="auxiliarybuttonvisible_property.html">AuxiliaryButtonVisible</a> property is set to <b>True</b>. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThere is a property to set the ToolTip text of this button also: <a href="auxiliarybuttontooltiptext_property.html">AuxiliaryButtonToolTipText</a>. The rule is that if the <a href="auxiliarybuttontooltiptext_property.html">AuxiliaryButtonToolTipText</a> property is set to "", then this localized text got from the <a href="getlocalizedtext_event.html">GetLocalizedText</a> event is used, otherwise it is used the text from the property.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_ToolTipText_ToolbarButton_PageNumbersOptions</b> =     </td>
+    <td>20900    </td>
+    <td><a style="color:#0040A0"> ' English text: "Page numbers options"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text of the toolbar button to show the <b>PageNumbersOptions dialog</b>.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_ToolTipText_ToolbarButton_Format</b> =     </td>
+    <td>21000    </td>
+    <td><a style="color:#0040A0"> ' English text: "Format"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text of the toolbar button to show the <b>Format dialog</b>.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_ToolTipText_ToolbarButton_OrientationPortrait</b> =     </td>
+    <td>21100    </td>
+    <td><a style="color:#0040A0"> ' English text: "Portrait orientation"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text of the toolbar button to set the orientation to portrait.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_ToolTipText_ToolbarButton_OrientationLandscape</b> =     </td>
+    <td>21200    </td>
+    <td><a style="color:#0040A0"> ' English text: "Landscape orientation"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text of the toolbar button to set the orientation to landscape.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_ToolTipText_ToolbarButton_OrientationCantBeChanged</b> =     </td>
+    <td>21300    </td>
+    <td><a style="color:#0040A0"> ' English text: "The page orientation cannot be changed"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text that will be used on the toolbar buttons that are intended to change the page orientation when the device does not support page orientation change.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_ToolTipText_ToolbarButton_ViewNormalSize</b> =     </td>
+    <td>21400    </td>
+    <td><a style="color:#0040A0"> ' English text: "View normal page size"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text of the optional toolbar button to show the page at its normal size.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_ToolTipText_ToolbarButton_ViewFullWidth</b> =     </td>
+    <td>21500    </td>
+    <td><a style="color:#0040A0"> ' English text: "View full width"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text of the toolbar button to show the page(s) at full width.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_ToolTipText_ToolbarButton_ViewFullHeight</b> =     </td>
+    <td>21600    </td>
+    <td><a style="color:#0040A0"> ' English text: "View full height"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text of the toolbar button to show the page(s) at full height.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_ToolTipText_ToolbarButton_ViewMultiplePages</b> =     </td>
+    <td>21700    </td>
+    <td><a style="color:#0040A0"> ' English text: "Show multiple pages"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text of the toolbar button to show multiple pages.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_ToolTipText_ToolbarButton_DecreaseScale</b> =     </td>
+    <td>21800    </td>
+    <td><a style="color:#0040A0"> ' English text: "Decrease fonts and elements size"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTooltip text for the toolbar button to scale down.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_ToolTipText_ToolbarButton_IncreaseScale</b> =     </td>
+    <td>21900    </td>
+    <td><a style="color:#0040A0"> ' English text: "Increase fonts and elements size"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTooltip text for the toolbar button to scale up.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_ToolTipText_ToolbarButton_ShowMenu</b> =     </td>
+    <td>22000    </td>
+    <td><a style="color:#0040A0"> ' English text: "Open menu"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text of the toolbar button to show the menu.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_ToolTipText_ToolbarButton_FirstPage</b> =     </td>
+    <td>22100    </td>
+    <td><a style="color:#0040A0"> ' English text: "First page"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text of the toolbar button to go to the fist page.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_ToolTipText_ToolbarButton_PreviousPage_Singular</b> =     </td>
+    <td>22200    </td>
+    <td><a style="color:#0040A0"> ' English text: "Previous page"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text of the toolbar button to go to the previous page used when showing one page.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_ToolTipText_ToolbarButton_PreviousPage_Plural</b> =     </td>
+    <td>22300    </td>
+    <td><a style="color:#0040A0"> ' English text: "Previous pages"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text of the toolbar button to go to the previous page used when showing more than one page.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_ToolTipText_ToolbarButton_NextPage_Singular</b> =     </td>
+    <td>22400    </td>
+    <td><a style="color:#0040A0"> ' English text: "Next page"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text of the toolbar button to go to the next page used when showing one page.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_ToolTipText_ToolbarButton_NextPage_Plural</b> =     </td>
+    <td>22500    </td>
+    <td><a style="color:#0040A0"> ' English text: "Next pages"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text of the toolbar button to go to the next page used when showing more than one page.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_ToolTipText_ToolbarButton_LastPage</b> =     </td>
+    <td>22600    </td>
+    <td><a style="color:#0040A0"> ' English text: "Last page"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text of the toolbar button to go to the last page.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_NonPrintableAreaText</b> =     </td>
+    <td>22700    </td>
+    <td><a style="color:#0040A0"> ' English text: "Nonprinting region"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIs the text used to show to the user, when the <b>Print preview dialog</b> is showing margins, the non-printable regions on the page (if there is any).</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_Inches_Abbreviation</b> =     </td>
+    <td>22800    </td>
+    <td><a style="color:#0040A0"> ' English text: """&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAbbreviation for inches, used in the tooltip to show the size of the margins.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PreviewDialog_Millimeters_Abbreviation</b> =     </td>
+    <td>22900    </td>
+    <td><a style="color:#0040A0"> ' English text: "mm"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAbbreviation for millimeters, used in the tooltip to show the size of the margins.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_ProgressWindow_lblMessage_Caption_Start_PrintPreview</b> =     </td>
+    <td>24000    </td>
+    <td><a style="color:#0040A0"> ' English text: "Loading preview"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption used in the progress window.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_ProgressWindow_lblMessage_Caption_Progress_PrintPreview</b> =     </td>
+    <td>24100    </td>
+    <td><a style="color:#0040A0"> ' English text: "Loading preview, page {#}"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption used in the progress window.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{#} is a placeholder for the page current number being processed.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_ProgressWindow_lblMessage_Caption_Start_General</b> =     </td>
+    <td>24200    </td>
+    <td><a style="color:#0040A0"> ' English text: "Generating document"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption used in the progress window.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_ProgressWindow_lblMessage_Caption_Progress_General</b> =     </td>
+    <td>24300    </td>
+    <td><a style="color:#0040A0"> ' English text: "Generating document, page {#}"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption used in the progress window.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{#} is a placeholder for the page current number being processed.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_ProgressWindow_MsgBox_Cancel_Preview</b> =     </td>
+    <td>24400    </td>
+    <td><a style="color:#0040A0"> ' English text: "Cancel the operation?"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspText of the message asking the user whether to cancel the current operation.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_Caption</b> =     </td>
+    <td>26000    </td>
+    <td><a style="color:#0040A0"> ' English text: "Print format"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspText of the caption of the <b>Format dialog</b> box.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_TabCaption_1</b> =     </td>
+    <td>26100    </td>
+    <td><a style="color:#0040A0"> ' English text: "Options"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption of the first tab of the dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_TabCaption_2</b> =     </td>
+    <td>26200    </td>
+    <td><a style="color:#0040A0"> ' English text: "Style"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption of the second tab of the dialog.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_lblScale_Caption</b> =     </td>
+    <td>26300    </td>
+    <td><a style="color:#0040A0"> ' English text: "Scale:"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption of the Label for Scale.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_lblColorMode_Caption</b> =     </td>
+    <td>26400    </td>
+    <td><a style="color:#0040A0"> ' English text: "Color mode:"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption of the Label for Color mode.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_lblPageNumbersPosition_Caption</b> =     </td>
+    <td>26500    </td>
+    <td><a style="color:#0040A0"> ' English text: "Page numbers position:"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption of the Label for Page numbers position.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_lblPageNumberFormat_Caption</b> =     </td>
+    <td>26600    </td>
+    <td><a style="color:#0040A0"> ' English text: "Page number format:"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption of the Label for Page number format.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_lblPageNumbersFont_Caption</b> =     </td>
+    <td>26700    </td>
+    <td><a style="color:#0040A0"> ' English text: "Page numbers font:"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption of the Label for Page numbers font.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_lblGridPosition_Caption</b> =     </td>
+    <td>26800    </td>
+    <td><a style="color:#0040A0"> ' English text: "Data grid position:"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption of the Label for Data grid position.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cboColorMode_PrinterDefault</b> =     </td>
+    <td>26900    </td>
+    <td><a style="color:#0040A0"> ' English text: "Printer default"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIn the Color mode combo box, the option for "Printer default".</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cboColorMode_GrayScale</b> =     </td>
+    <td>27000    </td>
+    <td><a style="color:#0040A0"> ' English text: "Grayscale"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIn the Color mode combo box, the option for "Grayscale".</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cboColorMode_Color</b> =     </td>
+    <td>27100    </td>
+    <td><a style="color:#0040A0"> ' English text: "Color"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIn the Color mode combo box, the option for "Color".</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cboPageNumbersPosition_BottomRight</b> =     </td>
+    <td>27200    </td>
+    <td><a style="color:#0040A0"> ' English text: "Bottom right"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIn the Page numbers position combo box, the option for "Bottom right".</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cboPageNumbersPosition_BottomLeft</b> =     </td>
+    <td>27300    </td>
+    <td><a style="color:#0040A0"> ' English text: "Bottom left"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIn the Page numbers position combo box, the option for "Bottom left".</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cboPageNumbersPosition_BottomCenter</b> =     </td>
+    <td>27400    </td>
+    <td><a style="color:#0040A0"> ' English text: "Bottom center"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIn the Page numbers position combo box, the option for "Bottom center".</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cboPageNumbersPosition_BottomOutside</b> =     </td>
+    <td>27500    </td>
+    <td><a style="color:#0040A0"> ' English text: "Bottom outside"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIn the Page numbers position combo box, the option for "Bottom outside". See <a href="bspagenumberspositionconstants_enumeration.html">BSPageNumbersPositionConstants</a>.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cboPageNumbersPosition_BottomInside</b> =     </td>
+    <td>27600    </td>
+    <td><a style="color:#0040A0"> ' English text: "Bottom inside"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIn the Page numbers position combo box, the option for "Bottom inside". See <a href="bspagenumberspositionconstants_enumeration.html">BSPageNumbersPositionConstants</a>.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cboPageNumbersPosition_TopRight</b> =     </td>
+    <td>27700    </td>
+    <td><a style="color:#0040A0"> ' English text: "Top right"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIn the Page numbers position combo box, the option for "Top right".</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cboPageNumbersPosition_TopLeft</b> =     </td>
+    <td>27800    </td>
+    <td><a style="color:#0040A0"> ' English text: "Top left"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIn the Page numbers position combo box, the option for "Top left".</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cboPageNumbersPosition_TopCenter</b> =     </td>
+    <td>27900    </td>
+    <td><a style="color:#0040A0"> ' English text: "Top center"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIn the Page numbers position combo box, the option for "Top center".</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cboPageNumbersPosition_TopOutside</b> =     </td>
+    <td>28000    </td>
+    <td><a style="color:#0040A0"> ' English text: "Top outside"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIn the Page numbers position combo box, the option for "Top outside". See <a href="bspagenumberspositionconstants_enumeration.html">BSPageNumbersPositionConstants</a>.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cboPageNumbersPosition_TopInside</b> =     </td>
+    <td>28100    </td>
+    <td><a style="color:#0040A0"> ' English text: "Top inside"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIn the Page numbers position combo box, the option for "Top inside". See <a href="bspagenumberspositionconstants_enumeration.html">BSPageNumbersPositionConstants</a>.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cboPageNumbersPosition_HidePageNumbers</b> =     </td>
+    <td>28200    </td>
+    <td><a style="color:#0040A0"> ' English text: "Hide page numbers"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIn the Page numbers position combo box, the option for "Hide page numbers" (not to print the page numbers).</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_fpcPageNumbers_ButtonToolTipTextDefault</b> =     </td>
+    <td>28300    </td>
+    <td><a style="color:#0040A0"> ' English text: "Choose font"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text of the button to select a different font.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_fpcPageNumbers_DrawSample_Bold</b> =     </td>
+    <td>28400    </td>
+    <td><a style="color:#0040A0"> ' English text: "bold"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThe ToolTip text of the font sample shows the font name and its attributes. This is the text for "bold".</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_fpcPageNumbers_DrawSample_Italic</b> =     </td>
+    <td>28500    </td>
+    <td><a style="color:#0040A0"> ' English text: "italic"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThe ToolTip text of the font sample shows the font name and its attributes. This is the text for "italic".</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cboGridPosition_Centered</b> =     </td>
+    <td>28600    </td>
+    <td><a style="color:#0040A0"> ' English text: "Centered"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIn the Data grid position combo box, the option for "Centered".&nbsp&nbsp&nbsp&nbsp</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cboGridPosition_Left</b> =     </td>
+    <td>28700    </td>
+    <td><a style="color:#0040A0"> ' English text: "Left"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIn the Data grid position combo box, the option for "Left".</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cboGridPosition_Right</b> =     </td>
+    <td>28800    </td>
+    <td><a style="color:#0040A0"> ' English text: "Right"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIn the Data grid position combo box, the option for "Right".</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cboGridPosition_Stretch</b> =     </td>
+    <td>28900    </td>
+    <td><a style="color:#0040A0"> ' English text: "Stretch"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIn the Data grid position combo box, the option for "Stretch" (stretch the grid to fill the width of the page).</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cboGridPosition_EnlargeLastColumn</b> =     </td>
+    <td>29000    </td>
+    <td><a style="color:#0040A0"> ' English text: "Enlarge the last column"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIn the Data grid position combo box, the option for "Enlarge the last column" (to fill the width of the page).</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cboGridPosition_ToolTipText</b> =     </td>
+    <td>29100    </td>
+    <td><a style="color:#0040A0"> ' English text: "It only has effect when the data grid is narrower than the page"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text of the Data grid position combo box. &nbsp&nbsp&nbsp&nbsp</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_lblStyle_Caption</b> =     </td>
+    <td>29200    </td>
+    <td><a style="color:#0040A0"> ' English text: "Style:"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIn the tab 2, the caption of the Label for the combo box for selecting the Style (grid style).</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cboStyle_List_Style</b> =     </td>
+    <td>29300    </td>
+    <td><a style="color:#0040A0"> ' English text: "Style"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspText used when a style does not have a name. The name displayed to the user is composed with this text and a number, such as "Style 3".</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cboStyle_List_CustomStyle</b> =     </td>
+    <td>29400    </td>
+    <td><a style="color:#0040A0"> ' English text: "Custom style"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspText used for naming custom styles set by the user. The names are composed with this text and a number, such as "Custom style 2".&nbsp&nbsp&nbsp&nbsp</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cboStyle_List_Customize</b> =     </td>
+    <td>29500    </td>
+    <td><a style="color:#0040A0"> ' English text: "Customize"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspText that appears at the end of the list of styles, allowing the user to create a new one.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cmdDeleteCustomStyle_ToolTipText</b> =     </td>
+    <td>29600    </td>
+    <td><a style="color:#0040A0"> ' English text: "Delete style"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption of the button to delete the currently selected style. The styles that the user can delete are only the custom ones.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_lblLineThickness_Caption</b> =     </td>
+    <td>29700    </td>
+    <td><a style="color:#0040A0"> ' English text: "Line thickness:"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption of the Label for Line thickness.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_txtLineThickness_ToolTipText</b> =     </td>
+    <td>29800    </td>
+    <td><a style="color:#0040A0"> ' English text: "Change line thickness (general)"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text for the text box to enter the line thickness, that is applied for all the lines but the header separator.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_ValidateLineThickness_Message</b> =     </td>
+    <td>29900    </td>
+    <td><a style="color:#0040A0"> ' English text: "The line thickness value must be between 1 and 80"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMessage text to show the user when an invalid line thickness value was entered. The allowed values are between 1 and 80.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_chkDrawHeaderBackground_Caption</b> =     </td>
+    <td>30000    </td>
+    <td><a style="color:#0040A0"> ' English text: "Headers background"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption of the check box to select whether to paint the headers background or not.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_chkDrawFixedColsBackground_Caption</b> =     </td>
+    <td>30100    </td>
+    <td><a style="color:#0040A0"> ' English text: "Fixed columns Backg."&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption of the check box to select whether to paint the fixed columns background or not.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_cmdFixedSectionsBackgroundColor_ToolTipText</b> =     </td>
+    <td>30200    </td>
+    <td><a style="color:#0040A0"> ' English text: "Change background color of headers (and / or fixed columns)"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text of the button to change the background color of headers and/or fixed columns.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_chkDrawOtherBackgrounds_Caption</b> =     </td>
+    <td>30300    </td>
+    <td><a style="color:#0040A0"> ' English text: "Other background colors"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption of the check box to select whether to paint the background of other cells (that have colored background in the original grid) or not.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_chkDrawOuterBorder_Caption</b> =     </td>
+    <td>30400    </td>
+    <td><a style="color:#0040A0"> ' English text: "Outer border"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption of the check box to select whether to draw the outer border or not.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_chkDrawHeaderBorder_Caption</b> =     </td>
+    <td>30500    </td>
+    <td><a style="color:#0040A0"> ' English text: "Headers borders"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption of the check box to select whether to draw the headers border or not.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_chkDrawColumnsHeadersLines_Caption</b> =     </td>
+    <td>30600    </td>
+    <td><a style="color:#0040A0"> ' English text: "Column headers lines"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption of the check box to select whether to draw the column lines in the headers or not.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_chkDrawColumnsDataLines_Caption</b> =     </td>
+    <td>30700    </td>
+    <td><a style="color:#0040A0"> ' English text: "Columns data lines"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption of the check box to select whether to draw the column lines in the data section or not.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_chkDrawRowLines_Caption</b> =     </td>
+    <td>30800    </td>
+    <td><a style="color:#0040A0"> ' English text: "Row lines"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption of the check box to select whether to draw the row lines or not.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_chkDrawHeaderSeparatorLine_Caption</b> =     </td>
+    <td>30900    </td>
+    <td><a style="color:#0040A0"> ' English text: "Headers separator:"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption of the check box to select whether to draw a line that separates the header from the data section or not.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_txtHeaderSeparatorLineThickness_ToolTipText</b> =     </td>
+    <td>31000    </td>
+    <td><a style="color:#0040A0"> ' English text: "Headers separator line thickness"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text for the text box to enter the header separator line thickness.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_VariousChangeColorCommandButtons_ToolTipText</b> =     </td>
+    <td>31100    </td>
+    <td><a style="color:#0040A0"> ' English text: "Change color"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspToolTip text for all the buttons used to change colors.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_ValidateHeaderSeparatorLineThickness_Message</b> =     </td>
+    <td>31200    </td>
+    <td><a style="color:#0040A0"> ' English text: "The line thickness value must be between 1 and 80"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMessage text to show the user when an invalid line thickness value was entered for the header separator. The allowed values are between 1 and 80.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_lblSample_Caption</b> =     </td>
+    <td>31300    </td>
+    <td><a style="color:#0040A0"> ' English text: "Sample:"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaption of the Label for the sample drawing.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_DrawSample_Column</b> =     </td>
+    <td>31400    </td>
+    <td><a style="color:#0040A0"> ' English text: "Column"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspText for one individual header cell in the sample drawing.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_DrawSample_Element</b> =     </td>
+    <td>31500    </td>
+    <td><a style="color:#0040A0"> ' English text: "Element"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspText for each first cell of a row in the sample drawing.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_FormatOptionsDialog_DrawSample_Data</b> =     </td>
+    <td>31600    </td>
+    <td><a style="color:#0040A0"> ' English text: "Data"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspText for each data cell in the sample drawing.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPPUI_PageNumbersOptionsDialog_Caption</b> =     </td>
+    <td>34000    </td>
+    <td><a style="color:#0040A0"> ' English text: "Page numbers options"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspText of the caption of the <b>PageNumbersOptions dialog</b> box.</a>    </td>
+  </tr>
+</table>
+<br><br><br>
+<div class="flex-footer">
+  <div style="flex-basis:40%"><a href="http://www.balkesoft.com"><img src="bslogo.png" alt="www.balkesoft.com" border="0"></a></div>
+  <div style="flex-basis:40%">&copy; 2020-2021 Balkesoft</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177277067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177277067-1');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<title>PrinterExEvents object</title>
+<meta name="DESCRIPTION" content="PrinterExEvents object" />
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+<header>
+  <br>
+  <a href="../../">Home</a> > <a href="../index.html">BSPrinter documentation</a> > <a href="index.html">Reference</a>
+  <br><br>
+</header>
+<h1>PrinterExEvents object</h1>
+<p>Auxiliary object used to receive events from a IPrinterEx object.<br>
+<br>
+Sample usage in a Form:<br>
+<br>
+<pre>
+Private WithEvents mPrinterExEvents As PrinterExEvents
+
+Private Sub Form_Load()
+    Set mPrinterExEvents = PrintPreview.Events
+End Sub
+
+Private Sub mPrinterExEvents_ReportPrinted()
+    MsgBox "Print done!"
+End Sub
+</pre><br>
+<br>
+This is only the code for handling the events, for a working sample add a <a href="printpreview_property.html">PrintPreview</a> control and a CommandButton to a form and paste this code:<br>
+<br>
+<pre>Private WithEvents mPrinterExEvents As PrinterExEvents
+
+Private Sub Command1_Click()
+    PrintPreview1.ShowPreview
+End Sub
+
+Private Sub Form_Load()
+    Set mPrinterExEvents = PrintPreview.Events
+End Sub
+
+Private Sub mPrinterExEvents_ReportPrinted()
+    MsgBox "Print done!"
+End Sub
+
+Private Sub PrintPreview1_PrepareReport(Cancel As Boolean)
+    Printer.Print "Hello world."
+End Sub
+</pre><br>
+<br>
+Sample usage in a Class module:<br>
+<br>
+<pre>
+Private WithEvents mPrinterExEvents As PrinterExEvents
+
+Private Sub Class_Initialize()
+    Set mPrinterExEvents = PrintPreview.Events
+End Sub
+
+Private Sub mPrinterExEvents_ReportPrinted()
+    MsgBox "Print done!"
+End Sub
+</pre><br>
+<br>
+This is only the code for handling the events, for a working sample add this code to a Class module:<br>
+<br>
+<pre>
+Private WithEvents mPrinterExEvents As PrinterExEvents
+
+Private Sub Class_Initialize()
+    Set mPrinterExEvents = PrintPreview.Events
+End Sub
+
+Public Sub PrintPreviewMyReport() ' This is the method that will be called to show the print preview dialog with the report
+    PrintPreview.ShowPreview
+End Sub
+
+Private Sub mPrinterExEvents_PrepareReport(Cancel As Boolean)
+    MyPrintingRoutine
+End Sub
+
+Private Sub mPrinterExEvents_ReportPrinted()
+    MsgBox "Print done!"
+End Sub
+
+Private Sub MyPrintingRoutine()
+    Printer.Print "Hello Word"
+    ' continue with the printing code
+End Sub
+</pre><br>
+<br>
+And add a CommandButton and this code to a form:<br>
+<br>
+<pre>
+Private Sub Command1_Click()
+    Dim c As New Class1
+    
+    c.PrintPreviewMyReport
+End Sub
+</pre></p><br>
+<li class="toc1"><a href="#ilink1">Events</a></li><br><h2><a name="ilink1" /><p class="section">Events</p></a></h2>
+<a href="aftershowingpagesetupdialog_event.html">AfterShowingPageSetupDialog</a><br>
+<a href="aftershowingprinterdialog_event.html">AfterShowingPrinterDialog</a><br>
+<a href="auxiliarybuttonclick_event.html">AuxiliaryButtonClick</a><br>
+<a href="beforeprint_event.html">BeforePrint</a><br>
+<a href="beforeprintingpagenumbers_event.html">BeforePrintingPageNumbers</a><br>
+<a href="beforeshowingformatdialog_event.html">BeforeShowingFormatDialog</a><br>
+<a href="beforeshowingpagesetupdialog_event.html">BeforeShowingPageSetupDialog</a><br>
+<a href="beforeshowingprinterdialog_event.html">BeforeShowingPrinterDialog</a><br>
+<a href="currentprinterdefaultsettingchange_event59.html">CurrentPrinterDefaultSettingChange</a><br>
+<a href="defaultprinterchange_event58.html">DefaultPrinterChange</a><br>
+<a href="enddoc_event.html">EndDoc</a><br>
+<a href="getlocalizedtext_event.html">GetLocalizedText</a><br>
+<a href="orientationchange_event.html">OrientationChange</a><br>
+<a href="papersizechange_event.html">PaperSizeChange</a><br>
+<a href="preparereport_event.html">PrepareReport</a><br>
+<a href="reportprinted_event.html">ReportPrinted</a><br>
+<a href="scalechange_event.html">ScaleChange</a><br>
+<a href="startdoc_event.html">StartDoc</a><br>
+<a href="startpage_event.html">StartPage</a><br>
+<br><br><br>
+<div class="flex-footer">
+  <div style="flex-basis:40%"><a href="http://www.balkesoft.com"><img src="bslogo.png" alt="www.balkesoft.com" border="0"></a></div>
+  <div style="flex-basis:40%">&copy; 2020-2021 Balkesoft</div>
+</div>
+</body>
+</html>

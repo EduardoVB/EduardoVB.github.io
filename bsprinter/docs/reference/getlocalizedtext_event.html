@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177277067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177277067-1');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<title>GetLocalizedText Event</title>
+<meta name="DESCRIPTION" content="GetLocalizedText Event" />
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+<header>
+  <br>
+  <a href="../../">Home</a> > <a href="../index.html">BSPrinter documentation</a> > <a href="index.html">Reference</a>
+  <br><br>
+</header>
+<h1>GetLocalizedText Event</h1>
+<p>Applies to: <a href="printpreview_control.html">PrintPreview</a>, <a href="printerexevents_object.html">PrinterExEvents</a> object</p>
+<p><table><tbody>    <tr>    <td>&nbsp&nbspParameter(s):&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    Info&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>LanguageID</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspLong&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    Info&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>SubLanguageID</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspLong&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    Info&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>TextID</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspLong&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    Returns value&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>Text</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspString&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    Info&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>Number</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspLong&nbsp&nbsp</td>    </tr>    <tr>    </tr>  </tbody></table></p><br>
+<h2>Description:</h2>
+<p>Occurs for every caption or text that the component needs to display.<br>
+<br>
+From the procedure of this event it is possible to translate the texts into any language that does not have built-in support by the component.<br>
+<br>
+The <b>LanguageID</b> argument identifies the language. If the <a href="uilanguage_property.html">UILanguage</a> property is set to <b>0 - bsLang_AUTO_SELECT</b> (default setting), the <b>LanguageID</b> argument will have the code number of the actual user locale, but if that property is set to a specific locale code number, it will come always with that number. The list of possible values are in the <a href="bslanguageidconstants_enumeration.html">BSLanguageIDConstants</a> enumeration.<br>
+<br>
+<b>SubLanguageID</b>: some languages can have a sub-language ID, it will be according to the locale of the user.<br>
+SUBLANG_ENGLISH_UK = 2<br>
+SUBLANG_PORTUGUESE_BRAZILIAN = 1<br>
+(the above two are already supported without doing anything)<br>
+<b>SubLanguageID</b> is intended to be used together with the language <b>LanguageID</b>.<br>
+You can ignore the <b>SubLanguageID</b> parameter if you want to provide the same <b>Text</b> for all locations of the language.<br>
+<br>
+The <b>TextID</b> argument identifies what caption is requested. The list of possible values with the corresponding texts in English are in the <a href="bsuserinterfacetextidconstants_enumeration.html">BSUserInterfaceTextIDConstants</a> enumeration.<br>
+<br>
+The way to customize a text is to assign it to the <b>Text</b> parameter. It comes with a default text but it is a return parameter.<br>
+<br>
+<b>Number</b>: This parameter is reserved, currently not used.<br>
+<br>
+Notes:<br>
+<br>
+This event can be used to customize the texts, even if the language has built-in support for that language by the component.<br>
+<br>
+For languages that do not have built-in support, English captions will be used.<br>
+<br>
+When translating to a new language, many of them are standard texts that can be found with <a href="https://www.microsoft.com/en-us/language/search">Microsoft terminology search</a><br>
+<br>
+<h3>See Also:</h3><a href="uilanguage_property.html">UILanguage</a> property<br>
+<a href="bsuserinterfacetextidconstants_enumeration.html">BSUserInterfaceTextIDConstants</a> constants<br>
+<a href="bslanguageidallconstants_enumeration.html">BSLanguageIDAllConstants</a> constants (all language constants)<br>
+<a href="bslanguageidconstants_enumeration.html">BSLanguageIDConstants</a> constants (language list with current built-in supportt)</p><br>
+<br><br><br>
+<div class="flex-footer">
+  <div style="flex-basis:40%"><a href="http://www.balkesoft.com"><img src="bslogo.png" alt="www.balkesoft.com" border="0"></a></div>
+  <div style="flex-basis:40%">&copy; 2020-2021 Balkesoft</div>
+</div>
+</body>
+</html>

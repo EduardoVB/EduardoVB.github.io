@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177277067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177277067-1');
+</script>
+<link rel="stylesheet" type="text/css" href="reference/styles.css">
+<title>BSPrinter information and usage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<meta name="DESCRIPTION" content="BSPrinter component's reference - Documentation." />
+</head><body>
+<header>
+  <br>
+  <a href="../">Home</a> > <a href="index.html">BSPrinter documentation</a> > <a>Basic information</a>
+  <br><br>
+</header>
+
+<h1>BSPrinter information and usage</h1><br>
+
+<h2>
+    What is BSPrinter?
+</h2>
+<p><br>
+It is a component whose main function is to provide    <strong>print preview</strong> capability to Visual Basic 6.
+</p>
+<p>
+We could say that it adds print preview to VB6’s    <strong>Printer object</strong>.
+</p>
+<h2>
+</h2>
+<br><h2>
+    How does it work and how to use it?
+</h2>
+<p><br>
+    1) It replaces the original <strong>Printer object</strong> with a new
+    object that is 100% compatible with it, a direct replacement.
+</p>
+<p>
+    To do so you need to add the following code to your program:
+<pre>
+Public Property Get Printer() As Printer
+    Set Printer = PrinterReplacement
+End Property
+
+Public Property Set Printer(nPrinter As Printer)
+    Set PrinterReplacement = nPrinter
+End Property
+</pre>
+<br>
+
+    You can place this code in a <strong>bas module</strong> or in the form. If
+    you place it in a bas module it will serve for all the project, but if you
+    do in the form, you should change the declaration to Private and it will be
+    useful only for that form.
+</p>
+<p>
+    2) It also has a control, the <strong>PrintPreview control</strong>.
+</p>
+<p>
+In order to make it work, you need to put the printing code inside the    <strong>PrepareReport event</strong> of one of these controls, or to call
+    the print procedure from there.
+</p>
+
+<pre>
+Private Sub PrintPreview1_PrepareReport(Cancel As Boolean)
+    Printer.Print "Hello World."
+    ' more printing code
+    '
+End Sub
+</pre>
+<br>
+
+<p>
+    3) Call the <strong>ShowPreview</strong> method of the PrintPreview
+    control.
+</p>
+<p>
+    PrintPreview1.ShowPreview
+</p>
+<p>
+    Instead of calling the print procedure directly, now you call the
+    ShowPreview method of the PrintPreview control (from the command button,
+    toolbar button, menu option or from where you previously called the print
+    procedure).
+</p>
+<p>
+    That’s it, you should now have print preview in your program by doing these
+    3 simple steps.
+</p>
+<br><h2>
+</h2>
+<h2>
+    Considerations
+</h2>
+<p><br>
+    1) Your code should be prepared to handle any paper size, by taking into
+account the page size from the <strong>Printer.ScaleWidth</strong> and    <strong>Printer.ScaleHeight </strong>properties, and not assuming certain
+    fixed size like Letter (for instance).
+</p>
+<p>
+    2) Now your code doesn’t need to care about margins, that’s automatically
+    handled by the component.
+</p>
+<p>
+    <strong>Printer.ScaleWidth</strong>
+    and <strong>Printer.ScaleHeight</strong> are all writable space now.
+</p>
+<p>
+    If your code handles margins, you’ll have to remove that from your code.
+</p>
+<p>
+    3) You don’t need to care about <strong>page numbers</strong>, they are now
+    automatically handled by the component too. If your printing routine adds
+    page numbers, you should remove that from the code.
+</p>
+<p>
+    4) If you don’t want to remove your margins and page numbers, you can make
+    the print preview work, you need to set these properties:
+</p>
+<p>
+    PrintPreview1.HandleMargins = False
+</p>
+<p>
+    PrintPreview1.PrintPageNumbers = False
+</p>
+<p>
+    PrintPreview1.AllowUserChangePageNumbers = False
+</p>
+<p>
+    The user will lose the ability to change margins and page numbers
+    properties from the component’s user interface, but your existing code can
+    work without having to do these changes.
+</p>
+<p>
+    That is shown in Sample 6 of the sample projects.
+</p>
+<p>
+    5) If your form is shown modally, you’ll need to declare the PrintPreview
+control event procedures as <strong>Public</strong> instead of    <strong>Private</strong>.
+</p>
+<br><h2>
+    More Information
+</h2>
+<p><br>
+    It can print the MSFlexgrid/ MSHFlexgrid with a single line of code, with
+    the method <strong>PrintGrid</strong>.
+</p>
+<p>
+    You could also use it to print any <strong>RecordSet</strong>, assigning it
+    to the DataSource of a grid that does not need to be visible.
+</p>
+<p>
+    Together with this document should be another one that has all the
+    property, method, and event <strong>references</strong> explained. Also
+    constants and other component objects.
+</p>
+<p>
+    The online version is at
+    <a href="http://www.balkesoft.com/bsprinter/docs/reference">
+        www.balkesoft.com/bsprinter/docs/reference
+    </a>
+</p>
+<p>
+    The <strong>user interface</strong> (of the dialog boxes, such as the Print
+Preview dialog box) has built-in support for several    <strong>languages</strong>. In the current version it supports English,
+    Spanish, French, German, Italian, Portuguese, Greek, Chinese, Hebrew and
+    Arabic.
+</p>
+<p>
+    Support for other languages can be added as shown on Sample 27 (under
+    ‘Advanced samples 2’).
+</p>
+<p>
+    For languages ​​that are not supported, English will be used.
+</p>
+<p>
+    The usage is very simple and straightforward (most of the times), just add
+    a PrintPreview control to the form and do the steps listed above. But it
+    still allows many customizations and to do some special things. Most of
+    them are covered in the <strong>sample projects</strong>.
+</p>
+<p>
+    You don’t need to learn all this to start using it, but if you want to know
+    how to do something, the samples are there to see how.
+</p>
+<p>
+    The sample projects list is:
+</p>
+<p>
+    1 - Hello World<br>
+    2 - Positioning on page<br>
+    3 - Print FlexGrid<br>
+    4 - Print RichTextBox<br>
+    5 - Save PDF file<br>
+    6 - Full backward compatibility<br>
+    7 - Show more pages by default<br>
+    8 - Set the default Orientation<br>
+    9 - Print using PrintEx method (for printing Unicode and more)<br>
+    10 - Allow or disallow user actions<br>
+    11 - Show margins<br>
+    12 - Show Print and Page setup from the form menu<br>
+    13 - Remember user preferences<br>
+    14 - Set a Footer or Header on every page<br>
+    15 - Print watermarks<br>
+    16 - Print form and controls<br>
+    17 - Use the Auxiliary button<br>
+    18 - Set the starting page number to other than 1<br>
+    19 - Page numbers settings<br>
+    20 - Change default margins<br>
+    21 - Change the default grid style when printing a grid<br>
+    22 - Customize User Interface look<br>
+    23 - Save PDF from a toolbar button<br>
+    24 - Advanced Footer and Header printing<br>
+    25 - Report with dynamic table of contents<br>
+    26 - API Drawing<br>
+    27 - Translate the user interface to another language<br>
+    28 - Use in Class modules<br>
+    29 - Global event handler<br>
+</p>
+<br><h2>
+    SxS Installations
+</h2>
+<p><br>
+    This is the text to add to the manifest file in SxS installations:
+</p>
+<pre>
+    &lt;file name="BSPrin10.ocx"&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;typelib tlbid="{451B73A5-1563-45D5-A6AC-7B2B7D30B778}" version="1.0" flags="control" helpdir="" /&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;comClass clsid="{C4E98C24-F349-4D2B-A7D7-DF49994E208B}" tlbid="{451B73A5-1563-45D5-A6AC-7B2B7D30B778}" threadingModel="Apartment" progid="BSPrinter.Global" /&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;comClass clsid="{04E0110C-1F98-4908-8421-37D512A6425A}" tlbid="{451B73A5-1563-45D5-A6AC-7B2B7D30B778}" threadingModel="Apartment" progid="BSPrinter.GridReportStyle" /&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;comClass clsid="{09607631-1E0B-446C-B311-9D36D64316DA}" tlbid="{451B73A5-1563-45D5-A6AC-7B2B7D30B778}" threadingModel="Apartment" progid="BSPrinter.PrintPreview" miscStatusIcon="recomposeonresize,cantlinkinside,insideout,activatewhenvisible,invisibleatruntime,setclientsitefirst" /&gt;
+    &lt;/file&gt;
+</pre>
+<p>
+    The component itself is ready to handle themed controls, DPI aware, DPI aware per monitor,
+    DPI aware per monitor v2. But these features depend on how the host program is
+    manifested.
+</p>
+<p>
+    It is also ready to handle non-integer twips-per-pixel settings, different
+    system font sizes, high contrast themes, Unicode languages and
+    right-to-left languages on its user interface.
+</p>
+<p>
+    The component has no dependencies, only the ocx file needs to be
+    distributed with your application.
+</p>
+
+<br><br><br>
+<div class="flex-footer">
+  <div style="flex-basis:40%"><a href="http://www.balkesoft.com"><img src="reference/bslogo.png" alt="www.balkesoft.com" border="0"></a></div>
+  <div style="flex-basis:40%">&copy; 2020-2021 Balkesoft</div>
+</div>
+
+</body>
+</html>

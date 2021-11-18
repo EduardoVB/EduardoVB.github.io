@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177277067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177277067-1');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<title>ShowFormatOptions Method</title>
+<meta name="DESCRIPTION" content="ShowFormatOptions Method" />
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+<header>
+  <br>
+  <a href="../../">Home</a> > <a href="../index.html">BSPrinter documentation</a> > <a href="index.html">Reference</a>
+  <br><br>
+</header>
+<h1>ShowFormatOptions Method</h1>
+<p>Applies to: <a href="printpreview_control.html">PrintPreview</a>, <a href="iprinterex_object.html">IPrinterEx</a> object</p>
+<p><table><tbody>    <tr>    <td>&nbsp&nbspReturn Type:&nbsp&nbsp</td>    <td>&nbsp&nbsp<b><a href="bsgeneraldialogresultconstants_enumeration.html">BSGeneralDialogResultConstants</a></b>&nbsp&nbsp</td>    </tr><tr><td>&nbsp</td></tr>    <tr>    <td>&nbsp&nbspNo parameters.&nbsp&nbsp</td>    </tr>  </tbody></table></p><br>
+<h2>Description:</h2>
+<p>Displays the <b>Format dialog box</b>, where the user can select page numbers options, color or grayscale for the report, and if there is printed a grid, the layout and color of it.<br>
+<br>
+The dialog <a href="showpagenumbersoptions_method.html">ShowPageNumbersOptions</a> is similar, but it just handles the page numbers options.<br>
+<br>
+If the user changed something and clicked the OK button, it returns <b>bsDialogResultOK</b>, otherwise it returns <b>bsDialogResultCancel</b>.<br>
+Note: If the user did not change anything, even if pressed the OK button, the return value will be <b>bsDialogResultCancel</b>.<br>
+<br>
+<h3>See Also:</h3><a href="formatbuttonvisible_property.html">FormatButtonVisible</a> property<br>
+<a href="printpagenumbers_property.html">PrintPageNumbers</a> property<br>
+<a href="allowuserchangepagenumbers_property.html">AllowUserChangePageNumbers</a> property<br>
+<a href="printgrid_method.html">PrintGrid</a> method<br>
+<a href="add_method.html">Add</a> method of <a href="gridreportstyles_object.html">GridReportStyles</a><br>
+<a href="showpagenumbersoptions_method.html">ShowPageNumbersOptions</a> method</p><br>
+<br><br><br>
+<div class="flex-footer">
+  <div style="flex-basis:40%"><a href="http://www.balkesoft.com"><img src="bslogo.png" alt="www.balkesoft.com" border="0"></a></div>
+  <div style="flex-basis:40%">&copy; 2020-2021 Balkesoft</div>
+</div>
+</body>
+</html>

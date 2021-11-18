@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177277067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177277067-1');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<title>PrintEx Method</title>
+<meta name="DESCRIPTION" content="PrintEx Method" />
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+<header>
+  <br>
+  <a href="../../">Home</a> > <a href="../index.html">BSPrinter documentation</a> > <a href="index.html">Reference</a>
+  <br><br>
+</header>
+<h1>PrintEx Method</h1>
+<p>Applies to: <a href="printpreview_control.html">PrintPreview</a>, <a href="iprinterex_object.html">IPrinterEx</a> object</p>
+<p><table><tbody>    <tr>    <td>&nbsp&nbspReturn Type:&nbsp&nbsp</td>    <td>&nbsp&nbspNone.&nbsp&nbsp</td>    </tr><tr><td>&nbsp</td></tr>    <tr>    <td>&nbsp&nbspParameter(s):&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspOptional&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>Text</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspVariant&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspOptional&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>Options</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbsp<a href="bsprintexoptionsconstants_enumeration.html">BSPrintExOptionsConstants</a>&nbsp&nbsp</td>    <td>&nbsp&nbspDefault value: bsLineFeed (0)&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspOptional&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>X</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspVariant&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspOptional&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>Y</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspVariant&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspOptional&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>Width</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspVariant&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspOptional&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>Height</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspVariant&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspOptional&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>Alignment</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbsp<a href="bsalignmentconstants_enumeration.html">BSAlignmentConstants</a>&nbsp&nbsp</td>    <td>&nbsp&nbspDefault value: bsAlignLeftTop (0)&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspOptional&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>WordWrap</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspBoolean&nbsp&nbsp</td>    <td>&nbsp&nbspDefault value: True&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspOptional&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>WordBreak</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspBoolean&nbsp&nbsp</td>    <td>&nbsp&nbspDefault value: False&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspOptional&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>RightToLeftReading</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbsp<a href="bsautoyesnoconstants_enumeration.html">BSAutoYesNoConstants</a>&nbsp&nbsp</td>    <td>&nbsp&nbspDefault value: bsAutoYN (2)&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspOptional&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>RectMarginsX</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspSingle&nbsp&nbsp</td>    <td>&nbsp&nbspDefault value: 0&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspOptional&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>RectMarginsY</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspSingle&nbsp&nbsp</td>    <td>&nbsp&nbspDefault value: 0&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspOptional&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>CancelIfTextExceedsWidth</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspBoolean&nbsp&nbsp</td>    <td>&nbsp&nbspDefault value: False&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In/Out&nbsp&nbsp</td>    <td>&nbsp&nbspOptional&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>TextExceedsWidth</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspBoolean&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In/Out&nbsp&nbsp</td>    <td>&nbsp&nbspOptional&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>StartsNewPage</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspBoolean&nbsp&nbsp</td>    </tr>    <tr>    </tr>  </tbody></table></p><br>
+<h2>Description:</h2>
+<p>Like the <b>Printer.Print</b> method, it allows to print text but with some additional options.<br>
+<br>
+Parameters explained:<br>
+<br>
+<b>Text</b>: the text to be printed<br>
+<br>
+<b>Options</b>: can be any of these values:<br>
+    bsLineFeed = 0<br>
+    bsNoLineFeed = 1<br>
+    bsAddTab = 2<br>
+The default for this optional parameter is <b>bsLineFeed</b>, that means that like the original <b>Printer.Print</b> method, it will add a line feed automatically after the text.<br>
+On the contrary, if this parameter is set to <b>bsNoLineFeed</b>, then no line feed will be added. It is like the function of the semicolon (;) in the original <b>Printer.Print</b> method.<br>
+<b>bsAddTab</b> adds a Tab after the text, just like the comma (,) in the Printer.Print method.<br>
+<br>
+<b>X</b>, <b>Y</b>, <b>Width</b> and <b>Height</b>: These parameters can define the rectangle on the page where the text will be printed. If they are omitted, the <b>Printer.CurrentX</b> and <b>Printer.CurrentY</b> will be used for the position, and the rectangle is the available space on the page. The text can wrap to fit in the rectangle.<br>
+<br>
+<b>Alignment</b>: Sets the alignment of the text in the available space. If the rectangle was set by the <b>X</b>, <b>Y</b>, <b>Width</b> and <b>Height</b> arguments, the text will be aligned in that rectangle according to the setting of this parameter.<br>
+Possible values are:<br>
+    bsAlignLeftTop = 0<br>
+    bsAlignLeftCenter = 1<br>
+    bsAlignLeftBottom = 2<br>
+    bsAlignCenterTop = 3<br>
+    bsAlignCenterCenter = 4<br>
+    bsAlignCenterBottom = 5<br>
+    bsAlignRightTop = 6<br>
+    bsAlignRightCenter = 7<br>
+    bsAlignRightBottom = 8<br>
+The default setting for this parameter is <b>bsAlignLeftTop</b><br>
+<br>
+<b>WordWrap</b>: determines whether the text will wrap into another line if it is too long to fit the available horizontal space.<br>
+The default setting for this parameter is True.<br>
+Note: This is one of the main advantages over the original <b>Printer.Print</b> method.<br>
+<br>
+<b>WordBreak</b>: similar to WordWrap, but in this case it determines whether the words can be split into more than one line when the text doesn't fit into the available horizontal space.<br>
+The default setting for this parameter is <b>False</b>.<br>
+Note: the difference between <b>WordWrap</b> and <b>WordBreak</b>, is that <b>WordWrap</b> does not split words. <b>WordBreak</b> implies <b>WordWrap</b>.<br>
+<br>
+<b>RightToLeftReading</b>: Sets the text direction right-to-left or left-to-right without changing the RightToLeft property setting.<br>
+If set to <b>bsAutoYN</b> (default setting), the RightToLeft property setting is used instead to set the text direction.<br>
+Note: <b>True</b> is converted to <b>bsYes</b><br>
+<br>
+<b>RectMarginsX</b>, <b>RectMarginsY</b>: <br>
+These values can define margins within the rectangle set by the parameters <b>X</b>, <b>Y</b>, <b>Width</b> and <b>Height</b>; therefore, they affect the position of the text that is according to the Alignment parameter. <br>
+They must be in the current ScaleMode of the Printer.<br>
+<br>
+<b>CancelIfTextExceedsWidth</b>:<br>
+Determines whether the printing operation will be aborted if the horizontal space is smaller than required.<br>
+The default setting for this parameter is <b>False</b>.<br>
+<br>
+<b>TextExceedsWidth</b>: This Boolean parameter needs to be passed <b>by reference</b> and <b>is a return value</b>. Returns <b>True</b> if the required horizontal space is greater than the available space.<br>
+<br>
+<b>StartsNewPage</b>: This Boolean parameter needs to be passed <b>by reference</b> and <b>is a return value</b>. Returns <b>True</b> if this print operation starts a new page.<br>
+<br>
+<h3>See Also:</h3><a href="textwidthex_method.html">TextWidthEx</a> method<br>
+<a href="textheightex_method.html">TextHeightEx</a> method</p><br>
+<br><br><br>
+<div class="flex-footer">
+  <div style="flex-basis:40%"><a href="http://www.balkesoft.com"><img src="bslogo.png" alt="www.balkesoft.com" border="0"></a></div>
+  <div style="flex-basis:40%">&copy; 2020-2021 Balkesoft</div>
+</div>
+</body>
+</html>

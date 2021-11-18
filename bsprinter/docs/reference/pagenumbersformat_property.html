@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177277067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177277067-1');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<title>PageNumbersFormat Property</title>
+<meta name="DESCRIPTION" content="PageNumbersFormat Property" />
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+<header>
+  <br>
+  <a href="../../">Home</a> > <a href="../index.html">BSPrinter documentation</a> > <a href="index.html">Reference</a>
+  <br><br>
+</header>
+<h1>PageNumbersFormat Property</h1>
+<p>Applies to: <a href="printpreview_control.html">PrintPreview</a>, <a href="iprinterex_object.html">IPrinterEx</a> object</p>
+<p>Type: <b>String</b></p><br>
+<h2>Description:</h2>
+<p>Returns or sets a string that determines how the page numbers will be formatted.<br>
+<br>
+These characters strings have special meaning, and will be replaced with:<br>
+    {#}: page number<br>
+    {##}: total page count<br>
+    {r}: page number in roman numbers, lowercase<br>
+    {Nr}: total page count in roman numbers, lowercase<br>
+    {R}: page number in roman numbers, uppercase<br>
+    {NR}: total page count in roman numbers, uppercase<br>
+    {a}: page number using letters as numbers, lowercase<br>
+    {Na}: total page count using letters as numbers, lowercase<br>
+    {A}: page number using letters as numbers, uppercase<br>
+    {NA}: total page count using letters as numbers, uppercase<br>
+    {i}: page number in sequence of i<br>
+    {Ni}: total page count in sequence of i<br>
+    {I}: page number in sequence of I<br>
+    {NI}: total page count in sequence of I<br>
+<br>
+All other characters will be printed verbatim.<br>
+But there is one exception: if the full string is "Default". In this case the default formatting will be used, that is "{#}" (just the page number).<br>
+<br>
+Notes:<br>
+<br>
+This setting sets the default format, but the user can change it from the <b>Page Numbers Options or the Format dialog boxes</b>, that appear pressing the Page Numbers Options or Format toolbar buttons at the <b>Print Preview dialog box</b>. The user will be able to change it as long as the <a href="allowuserchangepagenumbers_property.html">AllowUserChangePageNumbers</a> property setting is set to <b>True</b> (it is the default setting).<br>
+<br>
+From these dialog boxes the user can select from some predefined formats that are localized, being these formats in English:<br>
+"{#}"<br>
+"-{#}-"<br>
+"{#} / {##}"<br>
+"{#}/{##}"<br>
+"{#} of {##}"<br>
+"{r}"<br>
+"{R}"<br>
+"{a}"<br>
+"{A}"<br>
+"pg. {#}"<br>
+"pg. {#} / {##}"<br>
+"pg. {#}/{##}"<br>
+"pg. {#} of {##}"<br>
+"Page {#}"<br>
+"Page {#} / {##}"<br>
+"Page {#}/{##}"<br>
+"Page {#} of {##}"<br>
+"page {#}"<br>
+"page {#} / {##}"<br>
+"page {#}/{##}"<br>
+"page {#} of {##}"<br>
+<br>
+This list can be changed using the event <a href="getlocalizedtext_event.html">GetLocalizedText</a>, by returning the Text parameter of TextID's:<br>
+    bsPPUI_General_PageNumbersFormatStrings_Count<br>
+    bsPPUI_General_PageNumbersFormatString_Item + N<br>
+<br>
+For example, when receiving in the <a href="getlocalizedtext_event.html">GetLocalizedText</a> event with <b>bsPPUI_General_PageNumbersFormatStrings_Count</b> as argument for <b>TextID</b>, the <b>Text</b> parameter must return the number of different formats for page numbers. The default is "21" for English <b>LanguageID</b> (different languages may have different number of page number formatting options).<br>
+<br>
+After getting that number, the <a href="getlocalizedtext_event.html">GetLocalizedText</a> event will be raised that number of times with <b>TextID</b> argument ranging from <b>bsPPUI_General_PageNumbersFormatString_Item</b> to <b>bsPPUI_General_PageNumbersFormatString_Item</b> + 21 - 1 (or whatever number that was returned before in <b>bsPPUI_General_PageNumbersFormatStrings_Count</b>).<br>
+The <b>Text</b> parameter is used to return the format string for each option in that event procedure.<br>
+<br>
+In English the default predefined page numbers format strings available are "{#}" to "page {#} of {##}" listed above.<br>
+<br>
+<h3>See Also:</h3><a href="pagenumbersfont_property.html">PageNumbersFont</a> property<br>
+<a href="pagenumberscolor_property.html">PageNumbersColor</a> property<br>
+<a href="pagenumbersposition_property.html">PageNumbersPosition</a> property<br>
+<a href="printpagenumbers_property.html">PrintPageNumbers</a> property<br>
+<a href="startingpagenumber_property.html">StartingPageNumber</a> property</p><br>
+<br><br><br>
+<div class="flex-footer">
+  <div style="flex-basis:40%"><a href="http://www.balkesoft.com"><img src="bslogo.png" alt="www.balkesoft.com" border="0"></a></div>
+  <div style="flex-basis:40%">&copy; 2020-2021 Balkesoft</div>
+</div>
+</body>
+</html>

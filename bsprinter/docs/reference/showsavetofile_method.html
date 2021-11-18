@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177277067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177277067-1');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<title>ShowSaveToFile Method</title>
+<meta name="DESCRIPTION" content="ShowSaveToFile Method" />
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+<header>
+  <br>
+  <a href="../../">Home</a> > <a href="../index.html">BSPrinter documentation</a> > <a href="index.html">Reference</a>
+  <br><br>
+</header>
+<h1>ShowSaveToFile Method</h1>
+<p>Applies to: <a href="printpreview_control.html">PrintPreview</a>, <a href="iprinterex_object.html">IPrinterEx</a> object</p>
+<p><table><tbody>    <tr>    <td>&nbsp&nbspReturn Type:&nbsp&nbsp</td>    <td>&nbsp&nbsp<b><a href="bsgeneraldialogresultconstants_enumeration.html">BSGeneralDialogResultConstants</a></b>&nbsp&nbsp</td>    </tr><tr><td>&nbsp</td></tr>    <tr>    <td>&nbsp&nbspParameter(s):&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspRequired&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>DeviceNameToUse</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspString&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspRequired&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>DefaultFileNameOrPath</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspString&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspOptional&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>RememberLastPath</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspBoolean&nbsp&nbsp</td>    <td>&nbsp&nbspDefault value: True&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspOptional&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>OverwritePrompt</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspBoolean&nbsp&nbsp</td>    <td>&nbsp&nbspDefault value: True&nbsp&nbsp</td>    </tr>    <tr>    </tr>  </tbody></table></p><br>
+<h2>Description:</h2>
+<p>It saves the document to a file instead of printing it. <br>
+It is similar to the <a href="savetofile_method.html">SaveToFile</a> method, but in this case the user is asked where to save the file.<br>
+<br>
+It should be used only with printers drivers that produce a meaningful output file.<br>
+The file format and its corresponding extension depends on the printer driver. Most drivers will produce an intermediate file that is used by the spooling system, such as PostScript files, but some printers driver can produce a useful output such as PDF files or XPS files.<br>
+In Windows 10, the "Microsoft Print to PDF" driver produces a PDF file, whereas "Microsoft XPS Document Writer" outputs XPS files.<br>
+<br>
+Parameters explained:<br>
+<br>
+<b>DeviceNameToUse</b> is the printer driver to be used.<br>
+<br>
+<b>FileFullPath</b> is the full path of the output file.<br>
+<br>
+Notes: Some printer drivers might show additional dialogs on the operation.<br>
+If the printer driver is not installed the end user will get a message telling that the file cannot be saved because the printer driver is not installed.<br>
+You can use the <a href="printerexists_method.html">PrinterExists</a> method to check whether a particular printer driver is installed.<br>
+<br>
+<h3>See Also:</h3><a href="savetofile_method.html">SaveToFile</a> method.</p><br>
+<br><br><br>
+<div class="flex-footer">
+  <div style="flex-basis:40%"><a href="http://www.balkesoft.com"><img src="bslogo.png" alt="www.balkesoft.com" border="0"></a></div>
+  <div style="flex-basis:40%">&copy; 2020-2021 Balkesoft</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177277067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177277067-1');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<title>Events Property</title>
+<meta name="DESCRIPTION" content="Events Property" />
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+<header>
+  <br>
+  <a href="../../">Home</a> > <a href="../index.html">BSPrinter documentation</a> > <a href="index.html">Reference</a>
+  <br><br>
+</header>
+<h1>Events Property</h1>
+<p>Applies to: <a href="iprinterex_object.html">IPrinterEx</a> object</p>
+<p>Type: <b>Object</b> (Read only)</p><br>
+<h2>Description:</h2>
+<p>Returns a <a href="printerexevents_object.html">PrinterExEvents</a> object that can be used to receive events from the <a href="iprinterex_object.html">IPrinterEx</a> object's interface.<br>
+<br>
+Sample usage:<pre>
+Private WithEvents mPrinterExEvents As PrinterExEvents
+
+Private Sub Form_Load()
+    Set mPrinterExEvents = PrintPreview.Events
+End Sub
+
+Private Sub mPrinterExEvents_ReportPrinted()
+    MsgBox "Printed"
+End Sub</pre><br>
+<br>
+If is only necessary for getting events when the object supplied by the <a href="printpreview_property.html">PrintPreview</a> global property is used instead of a <a href="printpreview_control.html">PrintPreview</a> control.<br>
+When a <a href="printpreview_control.html">PrintPreview</a> control is used, it is not necessary because the events are handled by the control itself.<br>
+It can be also used when using <a href="printpreview_control.html">PrintPreview</a> controls though, to have a centralized event handler for all the controls.</p><br>
+<br><br><br>
+<div class="flex-footer">
+  <div style="flex-basis:40%"><a href="http://www.balkesoft.com"><img src="bslogo.png" alt="www.balkesoft.com" border="0"></a></div>
+  <div style="flex-basis:40%">&copy; 2020-2021 Balkesoft</div>
+</div>
+</body>
+</html>

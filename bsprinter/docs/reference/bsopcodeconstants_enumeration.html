@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177277067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177277067-1');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<title>BSOpCodeConstants Enumeration</title>
+<meta name="DESCRIPTION" content="BSOpCodeConstants Enumeration" />
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<style>.table2, .table2 th, .table2 td {border: 2px solid #e0e0e0;border-collapse: collapse;} .table2 th, .table2 td {padding: 8px;text-align: left;}</style><body>
+<header>
+  <br>
+  <a href="../../">Home</a> > <a href="../index.html">BSPrinter documentation</a> > <a href="index.html">Reference</a>
+  <br><br>
+</header>
+<h1>BSOpCodeConstants Enumeration</h1>
+<p>Constants to be used in the PaintPicture method of the Printer object for the <b>Opcode</b> parameter.<br>
+<br>
+It includes the original raster op constants and adds some new options.</p><br>
+<table class="table table2">
+  <tr>
+    <td><b>bsSMHalfTone</b> =     </td>
+    <td>0    </td>
+    <td><a style="color:#0040A0"> ' Stretch mode: HalfTone, what means better quality for stretching.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIt is the default setting, and was not available in the Original VB6's Printer object.&nbsp&nbsp&nbsp&nbspTo set this object to work as the original (lower quality when stretching images), set it to <b>bsSMVB6Default</b>.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>vbNotSrcErase</b> =     </td>
+    <td>1114278    </td>
+    <td><a style="color:#0040A0"> ' Original from VB6.&nbsp&nbsp&nbsp&nbspRaster operation: Inverts the result of combining the destination and source bitmaps by using OR.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>    </td>
+  </tr>
+  <tr>
+    <td><b>vbNotSrcCopy</b> =     </td>
+    <td>3342344    </td>
+    <td><a style="color:#0040A0"> ' Original from VB6.&nbsp&nbsp&nbsp&nbspRaster operation: Copies the inverted source bitmap to the destination.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>vbSrcErase</b> =     </td>
+    <td>4457256    </td>
+    <td><a style="color:#0040A0"> ' Original from VB6.&nbsp&nbsp&nbsp&nbspRaster operation: Inverts the destination bitmap and combines the result with the source bitmap by using AND.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>vbDstInvert</b> =     </td>
+    <td>5570569    </td>
+    <td><a style="color:#0040A0"> ' Original from VB6.&nbsp&nbsp&nbsp&nbspRaster operation: Inverts the destination bitmap.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>vbPatInvert</b> =     </td>
+    <td>5898313    </td>
+    <td><a style="color:#0040A0"> ' Original from VB6.&nbsp&nbsp&nbsp&nbspRaster operation: Combines the destination bitmap with the pattern by using XOR.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>vbSrcInvert</b> =     </td>
+    <td>6684742    </td>
+    <td><a style="color:#0040A0"> ' Original from VB6.&nbsp&nbsp&nbsp&nbspRaster operation: Combines pixels of the destination and source bitmaps by using XOR.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>vbSrcAnd</b> =     </td>
+    <td>8913094    </td>
+    <td><a style="color:#0040A0"> ' Original from VB6.&nbsp&nbsp&nbsp&nbspRaster operation: Combines pixels of the destination and source bitmaps by using AND.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>vbMergePaint</b> =     </td>
+    <td>12255782    </td>
+    <td><a style="color:#0040A0"> ' Original from VB6.&nbsp&nbsp&nbsp&nbspRaster operation: Combines the inverted source bitmap with the destination bitmap by using OR.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>vbMergeCopy</b> =     </td>
+    <td>12583114    </td>
+    <td><a style="color:#0040A0"> ' Original from VB6.&nbsp&nbsp&nbsp&nbspRaster operation: Combines the pattern and the source bitmap.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>vbSrcCopy</b> =     </td>
+    <td>13369376    </td>
+    <td><a style="color:#0040A0"> ' Original from VB6.&nbsp&nbsp&nbsp&nbspRaster operation: Copies the source bitmap to the destination bitmap.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>vbSrcPaint</b> =     </td>
+    <td>15597702    </td>
+    <td><a style="color:#0040A0"> ' Original from VB6.&nbsp&nbsp&nbsp&nbspRaster operation: Combines pixels of the destination and source bitmaps by using OR.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>    </td>
+  </tr>
+  <tr>
+    <td><b>vbPatCopy</b> =     </td>
+    <td>15728673    </td>
+    <td><a style="color:#0040A0"> ' Original from VB6.&nbsp&nbsp&nbsp&nbspRaster operation: Copies the pattern to the destination bitmap.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>vbPatPaint</b> =     </td>
+    <td>16452105    </td>
+    <td><a style="color:#0040A0"> ' Original from VB6.&nbsp&nbsp&nbsp&nbspRaster operation: Combines the inverted source bitmap with the pattern by using OR. Combines the result of this operation with the destination bitmap by using OR.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsSMBlackOnWhite</b> =     </td>
+    <td>16777216    </td>
+    <td><a style="color:#0040A0"> ' Stretch mode: Performs a Boolean AND operation using the color values for the eliminated and existing pixels. If the bitmap is a monochrome bitmap, this mode preserves black pixels at the expense of white pixels.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsSMVB6Default</b> =     </td>
+    <td>16777216    </td>
+    <td><a style="color:#0040A0"> ' Stretch mode: the same as <b>bsSMBlackOnWhite</b>.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsSMWhiteOnBlack</b> =     </td>
+    <td>33554432    </td>
+    <td><a style="color:#0040A0"> ' Stretch mode: Performs a Boolean OR operation using the color values for the eliminated and existing pixels. If the bitmap is a monochrome bitmap, this mode preserves white pixels at the expense of black pixels.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsSMColorOnColor</b> =     </td>
+    <td>50331648    </td>
+    <td><a style="color:#0040A0"> ' Stretch mode: Deletes the pixels. This mode deletes all eliminated lines of pixels without trying to preserve their information.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsSMQualityStretch</b> =     </td>
+    <td>83886080    </td>
+    <td><a style="color:#0040A0"> ' Stretch mode: Uses an enhanced stretching routine (Bicubic) that produces best quality, at expense of processing time.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsTransparentColor</b> =     </td>
+    <td>134217728    </td>
+    <td><a style="color:#0040A0"> ' Stretch mode: the image is painted with a transparent background color. The color used as transparent will be the first pixel of the image, the one at the location (0,0), the first pixel of left-top corner.</a>    </td>
+  </tr>
+</table>
+<br><br><br>
+<div class="flex-footer">
+  <div style="flex-basis:40%"><a href="http://www.balkesoft.com"><img src="bslogo.png" alt="www.balkesoft.com" border="0"></a></div>
+  <div style="flex-basis:40%">&copy; 2020-2021 Balkesoft</div>
+</div>
+</body>
+</html>

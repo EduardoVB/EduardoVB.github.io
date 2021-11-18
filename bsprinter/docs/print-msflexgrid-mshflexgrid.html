@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177277067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177277067-1');
+</script>
+<link rel="stylesheet" type="text/css" href="reference/styles.css">
+<link rel="stylesheet" type="text/css" href="images.css">
+<title>Print MSFlexGrid or MSHFlexGrid</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<meta name="DESCRIPTION" content="Print MSFlexGrid, MSHFlexGrid or any other flex grid using BSPrinter." />
+</head><body>
+<header>
+  <br>
+  <a href="../">Home</a> > <a href="index.html">BSPrinter documentation</a> > <a>Print Flex Grids</a>
+  <br><br>
+</header>
+
+<h1>How to print a flex grid using BSPrinter</h1><br>
+
+<h2>
+    The MSFlexGrid, MSHFlexGrid and any other compatible flex grid control can be printed with BSPrinter	
+</h2>
+<p><br>
+The specific code needed is this line:.
+</p>
+<pre>
+PrintPreview1.PrintGrid MSFlexGrid1
+</pre>
+<br>
+    Where 'PrintPreview1' is the name of the PrintPreview control and 'MSFlexGrid1' is the name of the flex grid control.
+<br>
+<br><h2>
+    This is the result:
+</h2>
+<p>
+  <div class="images-desktop">
+    <a href="../img/print_flexgrid1_big.jpg"><img src="../img/print_flexgrid1_small.jpg" alt="Report with Flex Grid" /></a>
+  </div>
+</p>
+<br>
+And the user can change the style by clicking this button:
+<p>
+  <div class="images-desktop">
+    <a href="../img/print_flexgrid2_big.jpg"><img src="../img/print_flexgrid2_small.jpg" alt="Report with Flex Grid" /></a>
+  </div>
+</p>
+<br>
+<p>
+  <div class="images-desktop">
+    <a href="../img/print_flexgrid3_big.jpg"><img src="../img/print_flexgrid3_small.jpg" alt="Report with Flex Grid" /></a>
+  </div>
+</p>
+<br>
+<p>
+  <div class="images-desktop">
+    <a href="../img/print_flexgrid4_big.jpg"><img src="../img/print_flexgrid4_small.jpg" alt="Report with Flex Grid" /></a>
+  </div>
+</p>
+<p>
+  <div class="images-desktop">
+    <a href="../img/print_flexgrid5_big.jpg"><img src="../img/print_flexgrid5_small.jpg" alt="Report with Flex Grid" /></a>
+  </div>
+</p>
+<br>
+This method can be used to print any <b>Recordset</b>, you just need to put it in a flex grid, that does not need to be visible.
+<br><br>
+To see further about printing the flex grid, you can see the samples that are installed by the installer
+In the <b>sample projects</b> that are installed by the installer at <b>[Program Files]\BSPrinter\Samples</b> or <b>[Program Files (x86)]\BSPrinter\Samples</b> on Windows 64 bits, there are two related samples, they are:<br><br>
+<b>3 - Print FlexGrid</b><br>
+<b>20 - Change the default grid style when printing a grid</b> (under: 8 - Advanced samples 1)<br>
+<br>
+<h2>Reference</h2>
+<a href="reference/printgrid_method.html">PrintGrid</a> method.<br>
+</p>
+
+<br><br><br>
+<div class="flex-footer">
+  <div style="flex-basis:40%"><a href="http://www.balkesoft.com"><img src="reference/bslogo.png" alt="www.balkesoft.com" border="0"></a></div>
+  <div style="flex-basis:40%">&copy; 2020-2021 Balkesoft</div>
+</div>
+
+</body>
+</html>

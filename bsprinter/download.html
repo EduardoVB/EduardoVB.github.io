@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177277067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177277067-1');
+</script>
+<meta charset="utf-8" />
+<title>BSPrinter downloads</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BSPrinter download page" />
+<link href="http://fonts.googleapis.com/css?family=Varela" rel="stylesheet" />
+<link href="screen.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header-wrapper">
+	<div class="flex-header">
+		<div style="flex-basis">
+			<a href="http://www.balkesoft.com"><img border="0" src="../img/bslogo_big_dark.png" width=280px></a>
+		</div>
+		<div style="flex-basis">
+		<div class="menu">
+			<ul>
+				<li><a href="index.html" accesskey="1" title="">Homepage</a></li>
+				<li class="current_page_item"><a href="#" accesskey="2" title="">Download</a></li>
+				<li><a href="docs/index.html" accesskey="3" title="">Documentation</a></li>
+				<li><a href="contact.html" accesskey="4" title="">Contact</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	</div>
+	<div id="banner">
+		<div class="container">
+			<div class="title">
+				<h2>BSPrinter provides print preview capability to Visual Basic 6</h2>
+				<span class="byline">You can use it in existing programs as well as in new ones</span>
+				<p style="color:rgba(255,255,255,.6);">Take VB6 printing system to another level, in some ways more modern than other languages</p>
+                        </div>
+		</div>
+	</div>
+	<div id="extra" class="container">
+		<h2>Download BSPrinter</h2><br><br>
+
+<a href="downloads/Install_BSPrinter.zip" onclick="gtag('event','Click', { 'event_category':'Downloads', 'event_label':'Install_BSPrinter.zip' })"  title="">Installation file</a><br>
+<a href="downloads/BSPrinter_OCX_with_samples.zip" onclick="gtag('event','Click', { 'event_category':'Downloads', 'event_label':'BSPrinter_OCX_with_samples.zip' })"  title="">OCX with sample projects</a><br>
+<a href="downloads/BSPrinter_OCX.zip" onclick="gtag('event','Click', { 'event_category':'Downloads', 'event_label':'BSPrinter_OCX.zip' })"  title="">OCX file alone</a><br>
+<br>
+<pre>Last release: 2021-10-31<br>Version: 1.8.0.484
+</pre>
+
+<div id="showchangelog">
+  <fieldset class="changelog" style="border: none">
+    <legend class="changeloglegend">&#8680 Click to read the changelog</legend>
+    <div class="hider" style="display:none" >
+        <ul>
+            <pre><div id="msgDiv"></div></pre>
+        </ul>
+    </div>
+  </fieldset>
+</div>
+<script>
+$.ajax({
+    url:'changelog.txt',
+    type:'HEAD',
+    error: function()
+    {
+        $("#showchangelog").hide();
+    },
+    success: function()
+    {
+		$.get('changelog.txt', function(data) {    
+		    var lines = data.split("\n");
+		    $.each(lines, function(n, elem) {
+		       $('#msgDiv').append('<div>' + elem + '&nbsp;</div>');
+		    });
+		});
+
+    }
+});
+$('.changelog').click(function(){
+    $(this).find('.hider').toggle();
+});
+</script>
+
+Use this license information:
+<pre>
+Name: VB6 Community
+Key: 17402-4591-9034-1701
+</pre>
+
+To enter the license information, please select a PrintPreview control, click on Custom, and go to the Liecnse tab.
+
+Minimum supported OS: Windows XP.
+<br><br>
+
+If you download and install the component from the installer, it will automatically register the OCX on Windows.<br>
+If you download the OCX file without the installer, you'll need to run the IDE elevated (with admin privileges) and manually register it from the menu Project, Components.<br>
+
+<br>BSPrinter is ready for the forthcoming VB6 replacements <a href="https://www.twinbasic.com/">twinBASIC</a> and <a href="https://www.radbasic.dev/">RadBasic</a><br><br>.
+	</div>
+</div>
+
+<div class="flex-footer">
+  <div style="flex-basis:30%"><a href="http://www.balkesoft.com"><img src="../img/bslogo_small_dark.png" alt="www.balkesoft.com" border="0"></a></div>
+  <div style="flex-basis:20%"><a href="privacy-policy.html" title="">Privacy Policy</a></div>
+  <div style="flex-basis:20%">&copy; 2020-2021 Balkesoft</div>
+</div>
+</body>
+</html>

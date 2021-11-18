@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177277067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177277067-1');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<title>BSPrinterFlagsConstants Enumeration</title>
+<meta name="DESCRIPTION" content="BSPrinterFlagsConstants Enumeration" />
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<style>.table2, .table2 th, .table2 td {border: 2px solid #e0e0e0;border-collapse: collapse;} .table2 th, .table2 td {padding: 8px;text-align: left;}</style><body>
+<header>
+  <br>
+  <a href="../../">Home</a> > <a href="../index.html">BSPrinter documentation</a> > <a href="index.html">Reference</a>
+  <br><br>
+</header>
+<h1>BSPrinterFlagsConstants Enumeration</h1>
+<p>Constants used by the <a href="flags_property.html">Flags</a> property.<br>
+<br>
+Read full info: <a href="https://docs.microsoft.com/en-us/windows/win32/api/commdlg/ns-commdlg-printdlgexa">https://docs.microsoft.com/en-us/windows/win32/api/commdlg/ns-commdlg-printdlgexa</a><br>
+</p><br>
+<table class="table table2">
+  <tr>
+    <td><b>bsPDAllPages</b> =     </td>
+    <td>0    </td>
+    <td><a style="color:#0040A0"> ' The default flag that indicates that the <b>All</b> (pages) radio button is initially selected.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThis flag is used as a placeholder to indicate that the <b>bsPDPageNums</b>, <b>bsPDSelection</b>, and <b>bsPDCurrentPage</b> flags are not specified.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPDCurrentPage</b> =     </td>
+    <td>4194304    </td>
+    <td><a style="color:#0040A0"> ' If this flag is set, the <b>Current Page</b> radio button is selected instead of <b>All</b>.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWhen the user selects the <b>Current Page</b> option, he will print the current page in the Print Preview dialog box. If more than one page is displayed, only the first will be printed.&nbsp&nbsp&nbsp&nbspIf the Print Preview dialog box is not displayed, this option will be disabled.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSee also the flag <b>bsPDNoCurrentPage</b>&nbsp&nbsp&nbsp&nbsp</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPDDisablePrintToFile</b> =     </td>
+    <td>524288    </td>
+    <td><a style="color:#0040A0"> ' Disables the <b>Print to File</b> check box.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPDNoCurrentPage</b> =     </td>
+    <td>8388608    </td>
+    <td><a style="color:#0040A0"> ' Disables the <b>Current Page</b> radio button.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPDNoPageNums</b> =     </td>
+    <td>8    </td>
+    <td><a style="color:#0040A0"> ' Disables the <b>Pages</b> radio button and the associated edit controls.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPDNoSelection</b> =     </td>
+    <td>4    </td>
+    <td><a style="color:#0040A0"> ' Disables the <b>Selection</b> radio button.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPDNoWarning</b> =     </td>
+    <td>128    </td>
+    <td><a style="color:#0040A0"> ' Prevents the warning message from being displayed when an error occurs.</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPDPageNums</b> =     </td>
+    <td>2    </td>
+    <td><a style="color:#0040A0"> ' If this flag is set, the <b>Pages</b> radio button is selected. If none of the <b>bsPDPageNums</b>, <b>bsPDSelection</b>, or <b>bsPDCurrentPage</b> flags is set, the <b>All</b> radio button is selected.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThe user can specify pages or page ranges, for example:&nbsp&nbsp&nbsp&nbsp1,4,7&nbsp&nbsp&nbsp&nbsp1,3,5,10-12&nbsp&nbsp&nbsp&nbsp3,7-9,13-17&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(without spaces)</a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPDPrintToFile</b> =     </td>
+    <td>32    </td>
+    <td><a style="color:#0040A0"> ' If this flag is set, the <b>Print to File</b> check box is selected.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSee also the flag <b>bsPDShowPrintToFile</b></a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPDSelection</b> =     </td>
+    <td>1    </td>
+    <td><a style="color:#0040A0"> ' If this flag is set, the <b>Selection</b> radio button is selected instead of <b>All</b>.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWhen the user selects <b>Selection</b> option, he will print the pages that are currently displayed in the Print Preview dialog box.&nbsp&nbsp&nbsp&nbspIf the Print Preview dialog box is not displayed, this option will be disabled.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSee also the flag <b>bsPDNoSelection</b></a>    </td>
+  </tr>
+  <tr>
+    <td><b>bsPDShowPrintToFile</b> =     </td>
+    <td>256    </td>
+    <td><a style="color:#0040A0"> ' Shows the <b>Print to File</b> check box.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNote: this option is added and is not available in the original PrintDlgEx dialog (API), it instead has the HidePrintToFile flag. But here that check box was set hidden by default, and hence the flags are changed.</a>    </td>
+  </tr>
+</table>
+<br><br><br>
+<div class="flex-footer">
+  <div style="flex-basis:40%"><a href="http://www.balkesoft.com"><img src="bslogo.png" alt="www.balkesoft.com" border="0"></a></div>
+  <div style="flex-basis:40%">&copy; 2020-2021 Balkesoft</div>
+</div>
+</body>
+</html>

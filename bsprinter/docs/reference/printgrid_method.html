@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177277067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177277067-1');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<title>PrintGrid Method</title>
+<meta name="DESCRIPTION" content="PrintGrid Method" />
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+<header>
+  <br>
+  <a href="../../">Home</a> > <a href="../index.html">BSPrinter documentation</a> > <a href="index.html">Reference</a>
+  <br><br>
+</header>
+<h1>PrintGrid Method</h1>
+<p>Applies to: <a href="printpreview_control.html">PrintPreview</a>, <a href="iprinterex_object.html">IPrinterEx</a> object</p>
+<p><table><tbody>    <tr>    <td>&nbsp&nbspReturn Type:&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>Boolean</b>&nbsp&nbsp</td>    </tr><tr><td>&nbsp</td></tr>    <tr>    <td>&nbsp&nbspParameter(s):&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspRequired&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>Grid</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspObject&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspOptional&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>Style</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspVariant&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspOptional&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>UserCanChangeStyle</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspBoolean&nbsp&nbsp</td>    <td>&nbsp&nbspDefault value: True&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspOptional&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>GridPosition</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbsp<a href="bsgridpositioningconstants_enumeration.html">BSGridPositioningConstants</a>&nbsp&nbsp</td>    <td>&nbsp&nbspDefault value: bsGACentered (0)&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspOptional&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>ColsToHide</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspVariant&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspOptional&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>PrintCellsFormatting</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbsp<a href="bsprintcellsformattingconstants_enumeration.html">BSPrintCellsFormattingConstants</a>&nbsp&nbsp</td>    <td>&nbsp&nbspDefault value: bsPCFPrintAll (0)&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    In&nbsp&nbsp</td>    <td>&nbsp&nbspOptional&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>IgnoreEmptyRowsAtTheEnd</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspBoolean&nbsp&nbsp</td>    <td>&nbsp&nbspDefault value: True&nbsp&nbsp</td>    </tr>    <tr>    </tr>  </tbody></table></p><br>
+<h2>Description:</h2>
+<p>Prints the contents a grid.<br>
+Supported types are <b>MSFlexGrid</b>, <b>MSHFlexGrid</b> and compatibles.<br>
+<br>
+Parameters explained:<br>
+<br>
+<b>Grid</b>: A reference to the Grid control to be printed. This is the only parameter that is required.<br>
+<br>
+<b>Style</b>: This optional parameter can set the Style of the Grid. It can be an object <a href="gridreportstyle_object.html">GridReportStyle</a>, a number identifying a Style or a String with the Name of a Style.<br>
+The style can be one built-in, or one that was added by calling the <a href="add_method.html">Add</a> method of the <a href="gridreportstyles_property.html">GridReportStyles</a> collection.<br>
+<br>
+<b>UserCanChangeStyle</b>: Determines if the user can customize the look of the printed grid by selecting another Style.<br>
+Its default value is <b>True</b>.<br>
+<br>
+<b>GridPosition</b>: Determines the position of the grid if it is smaller than the page width.<br>
+Possible values are:<br>
+    bsGACentered = 0<br>
+    bsGALeft = 1<br>
+    bsGARight = 2<br>
+    bsGAStretch = 3<br>
+    bsGAEnlargeLastColumn = 4<br>
+    bsGACenteredAndUserCanChange = 8<br>
+    bsGALeftAndUserCanChange = 9<br>
+    bsGARightAndUserCanChange = 10<br>
+    bsGAStretchAndUserCanChange = 11<br>
+    bsGAEnlargeLastColumnAndUserCanChange = 12<br>
+The default value is <b>bsGACentered</b>.<br>
+<br>
+<b>ColsToHide</b>: optional array of Boolean values that determines what columns to hide (not to print).<br>
+<br>
+<b>PrintCellsFormatting</b>: Determines whether the cells formatting will be printed and what.<br>
+Possible values are:<br>
+    bsPCFPrintAll = 0<br>
+    bsPCFIgnoreForeColor = 1<br>
+    bsPCFIgnoreBackColor = 2<br>
+    bsPCFIgnoreFonts = 4<br>
+    bsPCFIgnoreTextAlignment = 8<br>
+    bsPCFIgnorePictures = 16<br>
+    bsPCFIgnoreAll = 31<br>
+The default value is <b>bsPCFPrintAll</b>.<br>
+<br>
+<b>IgnoreEmptyRowsAtTheEnd</b>: If there are empty rows at the end of the grid (not filled with data), it determines whether these rows will printed or not.<br>
+The default value is <b>True</b> (that means that the empty rows at the end will not be printed).<br>
+<br>
+Return value:<br>
+When the grid has many rows, the <b>Print Preview dialog box</b> will show a window with the progress of loading the data and preparing the preview, and it will show a button that allows to cancel the operation. If the user clicked the button to cancel the operation, the <b>Print Preview dialog</b> won't be displayed and this method will return <b>False</b>, meaning that the operation was canceled. In a normal operation it returns <b>True</b>.<br>
+<br>
+<h3>See Also:</h3><a href="printrichtextbox_method.html">PrintRichTextBox</a> method</p><br>
+<br><br><br>
+<div class="flex-footer">
+  <div style="flex-basis:40%"><a href="http://www.balkesoft.com"><img src="bslogo.png" alt="www.balkesoft.com" border="0"></a></div>
+  <div style="flex-basis:40%">&copy; 2020-2021 Balkesoft</div>
+</div>
+</body>
+</html>

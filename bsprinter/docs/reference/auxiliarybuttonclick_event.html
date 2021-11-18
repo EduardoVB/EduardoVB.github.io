@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177277067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177277067-1');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<title>AuxiliaryButtonClick Event</title>
+<meta name="DESCRIPTION" content="AuxiliaryButtonClick Event" />
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+<header>
+  <br>
+  <a href="../../">Home</a> > <a href="../index.html">BSPrinter documentation</a> > <a href="index.html">Reference</a>
+  <br><br>
+</header>
+<h1>AuxiliaryButtonClick Event</h1>
+<p>Applies to: <a href="printpreview_control.html">PrintPreview</a>, <a href="printerexevents_object.html">PrinterExEvents</a> object</p>
+<p><table><tbody>    <tr>    <td>&nbsp&nbspParameter(s):&nbsp&nbsp</td>    </tr>    <tr>    <td>&nbsp&nbsp    Returns value&nbsp&nbsp</td>    <td>&nbsp&nbsp<b>UpdateReport</b>&nbsp&nbsp</td>    <td>&nbsp&nbspAs&nbsp&nbsp</td>    <td>&nbsp&nbspBoolean&nbsp&nbsp</td>    </tr>    <tr>    </tr>  </tbody></table></p><br>
+<h2>Description:</h2>
+<p>Occurs when the user clicks on the Auxiliary button.<br>
+<br>
+It can be used to perform certain action such as displaying a custom dialog or some other task or configuration.<br>
+<br>
+<b>UpdateReport</b> is a return value.<br>
+The default value for the <b>UpdateReport</b> is <b>True</b>.<br>
+If it is returned with <b>False</b> the report will not be redrawn, otherwise the <a href="preparereport_event.html">PrepareReport</a> event will be raised and the pages at the <b>Print preview dialog</b> will be updated.<br>
+<br>
+<h3>See Also:</h3><a href="auxiliarybuttonvisible_property.html">AuxiliaryButtonVisible</a> property</p><br>
+<br><br><br>
+<div class="flex-footer">
+  <div style="flex-basis:40%"><a href="http://www.balkesoft.com"><img src="bslogo.png" alt="www.balkesoft.com" border="0"></a></div>
+  <div style="flex-basis:40%">&copy; 2020-2021 Balkesoft</div>
+</div>
+</body>
+</html>

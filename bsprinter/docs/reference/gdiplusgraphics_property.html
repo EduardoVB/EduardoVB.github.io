@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177277067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177277067-1');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<title>GDIPlusGraphics Property</title>
+<meta name="DESCRIPTION" content="GDIPlusGraphics Property" />
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+<header>
+  <br>
+  <a href="../../">Home</a> > <a href="../index.html">BSPrinter documentation</a> > <a href="index.html">Reference</a>
+  <br><br>
+</header>
+<h1>GDIPlusGraphics Property</h1>
+<p>Applies to: <a href="printpreview_control.html">PrintPreview</a>, <a href="iprinterex_object.html">IPrinterEx</a> object</p>
+<p>Type: <b>Long</b> (Read only)</p><br>
+<h2>Description:</h2>
+<p>Returns a handle to a GDI+ Graphics object that can be used to draw with that technology.<br>
+<br>
+For drawing with GDI+, use this Graphics object instead of the one obtained with the <b>GdipCreateFromHDC</b> API, because if doing so, there can be problems with transparencies and device printers that use Postscript because the component uses metafiles.<br>
+<br>
+Notes:<br>
+Do not make a cache copy of the handle obtained with this property because it changes for every page. As a side note, the same care must be taken with the <b>Printer.hDC</b> property of the replacement <b>Printer</b> object.<br>
+<br>
+When you finished drawing, do not delete this object with the GdipDeleteGraphics API. It is deleted by the component at a proper moment when it is no longer needed.</p><br>
+<br><br><br>
+<div class="flex-footer">
+  <div style="flex-basis:40%"><a href="http://www.balkesoft.com"><img src="bslogo.png" alt="www.balkesoft.com" border="0"></a></div>
+  <div style="flex-basis:40%">&copy; 2020-2021 Balkesoft</div>
+</div>
+</body>
+</html>

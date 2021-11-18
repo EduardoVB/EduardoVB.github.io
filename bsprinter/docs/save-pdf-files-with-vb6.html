@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177277067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177277067-1');
+</script>
+<link rel="stylesheet" type="text/css" href="reference/styles.css">
+<title>Create and save PDF files in VB6 using BSPrinter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<meta name="DESCRIPTION" content="With BSPrinter component it is possible to save PDF files on Windows 10." />
+</head><body>
+<header>
+  <br>
+  <a href="../">Home</a> > <a href="index.html">BSPrinter documentation</a> > <a>Save PDF files</a>
+  <br><br>
+</header>
+
+<h1>How to create and save PDF files with BSPrinter without user interaction</h1><br>
+
+<h2>
+    What is required?
+</h2>
+<p><br>
+The <b>Microsoft Print to PDF</b> printer driver that comes with <b>Windows 10</b> is required to be installed (it is installed by default).
+</p>
+<br><h2>
+    What is the code needed to save PDF files with BSPrinter?
+</h2>
+<p><br>
+    BSPrinter works with the <b>Printer object</b>, so what you want to save as PDF must be written or drawn there.
+</p>
+<p>
+    To test it, add a <b>PrintPreview control</b> to a form (you need BSPrinter component installed, if you don't have it download it from the <a href="../download.html">download page</a>), add a Command button and this code:
+</p>
+<pre>
+Private Sub Command1_Click()
+    If PrintPreview1.PrinterExists("Microsoft Print to PDF") Then
+        ' replace the file path with a path where you are allowed to write files
+        PrintPreview1.SaveToFile "Microsoft Print to PDF", "C:\test.pdf"
+        If PrintPreview1.Canceled Then
+            MsgBox "Error, could not save the file, check if to are allowed to write at that location", vbExclamation
+        End If
+    Else
+        MsgBox "'Microsoft Print to PDF' printer driver not installed, cannot save PDF file.", vbExclamation
+    End If
+End Sub
+
+Private Sub PrintPreview1_PrepareReport(Cancel As Boolean)
+    ' here you prepare the document
+    Printer.FontSize = 16
+    Printer.Print "Hello World!"
+End Sub
+</pre>
+<br>
+<p>
+    You also will need to add this code in a module (or in the form). This is to replace the VB6 original printer object with a new one:
+</p>
+
+<pre>
+Public Property Get Printer() As Printer
+    Set Printer = PrinterReplacement
+End Property
+
+Public Property Set Printer(nPrinter As Printer)
+    Set PrinterReplacement = nPrinter
+End Property
+</pre>
+<br>
+
+    In the <b>sample projects</b> that are installed by the installer at <b>[Program Files]\BSPrinter\Samples</b> or <b>[Program Files (x86)]\BSPrinter\Samples</b> on Windows 64 bits, there are two sample projects for saving PDF file, they are:<br><br>
+    <b>5 - Save PDF file</b><br>
+    <b>23 - Save PDF from a toolbar button</b> (under: 9 - Advanced samples 2)<br>
+</p>
+<br><p>
+<h2>Reference</h2>
+<a href="reference/savetofile_method.html">SaveToFile</a> method.<br>
+<a href="reference/printerexists_method.html">PrinterExists</a> method.<br>
+<a href="reference/canceled_property.html">Canceled</a> property.<br>
+</p>
+
+<br><br><br>
+<div class="flex-footer">
+  <div style="flex-basis:40%"><a href="http://www.balkesoft.com"><img src="reference/bslogo.png" alt="www.balkesoft.com" border="0"></a></div>
+  <div style="flex-basis:40%">&copy; 2020-2021 Balkesoft</div>
+</div>
+
+</body>
+</html>

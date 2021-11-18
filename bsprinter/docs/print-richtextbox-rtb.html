@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177277067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177277067-1');
+</script>
+<link rel="stylesheet" type="text/css" href="reference/styles.css">
+<title>Print RichTextBox in VB6 using BSPrinter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<meta name="DESCRIPTION" content="With BSPrinter component it is possible to print the RichTextBox control." />
+</head><body>
+<header>
+  <br>
+  <a href="../">Home</a> > <a href="index.html">BSPrinter documentation</a> > <a>Print RichTextBox</a>
+  <br><br>
+</header>
+
+<h1>How to print a RichTextBox in Visual Basic 6 using BSPrinter</h1><br>
+
+<h2>
+    The VB6 Rich TextBox control can be printed with BSPrinter with one line of code:	
+</h2>
+<br>
+<pre>
+PrintPreview1.PrintRichTextBox RichTextBox1
+</pre>
+<br>
+    Where 'PrintPreview1' is the name of the PrintPreview control and 'RichTextBox1' is the name of the RTB control.
+<br><br>
+    To test it, add a <b>PrintPreview control</b> to a form (you need BSPrinter component installed, if you don't have it download it from the <a href="../download.html">download page</a>), a RichTextBox control, a Command button and this code:
+</p>
+<pre>
+Private Sub Command1_Click()
+    ' show the Print Preview dialog
+    PrintPreview1.ShowPreview
+End Sub
+
+Private Sub PrintPreview1_PrepareReport(Cancel As Boolean)
+    ' the following is the only line needed to print the RichTextBox control
+    PrintPreview1.PrintRichTextBox RichTextBox1
+End Sub
+
+Private Sub Form_Load()
+    RichTextBox1.LoadFile ([RTB file path])
+End Sub</pre>
+<br>
+<p>
+    You also will need to add this code in a module (or in the form). This is to replace the VB6 original printer object with a new one:
+</p>
+
+<pre>
+Public Property Get Printer() As Printer
+    Set Printer = PrinterReplacement
+End Property
+
+Public Property Set Printer(nPrinter As Printer)
+    Set PrinterReplacement = nPrinter
+End Property
+</pre>
+<br>
+
+    In the <b>sample projects</b> that are installed by the installer at <b>[Program Files]\BSPrinter\Samples</b> or <b>[Program Files (x86)]\BSPrinter\Samples</b> on Windows 64 bits, there is a sample project for printing the RTB, it is sample 4:<br><br>
+    <b>4 - Print RichTextBox</b><br>
+</p>
+<br><p>
+<h2>Reference</h2>
+<a href="reference/printrichtextbox_method.html">PrintRichTextBox</a> method.<br>
+</p>
+
+<br><br><br>
+<div class="flex-footer">
+  <div style="flex-basis:40%"><a href="http://www.balkesoft.com"><img src="reference/bslogo.png" alt="www.balkesoft.com" border="0"></a></div>
+  <div style="flex-basis:40%">&copy; 2020-2021 Balkesoft</div>
+</div>
+
+</body>
+</html>

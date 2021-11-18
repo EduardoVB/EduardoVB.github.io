@@ -1,0 +1,313 @@
+	html, body
+	{
+		height: 100%;
+	}
+
+	body
+	{
+		margin: 0px;
+		padding: 0px;
+		background: #333333;
+		font-family: 'Varela', sans-serif;
+		color: #454545;
+	}
+	
+	
+	h1, h2, h3
+	{
+		margin: 0;
+		padding: 0;
+		font-weight: 700;
+		color: #2B3F48;
+	}
+	
+	p, ol, ul
+	{
+		margin-top: 0;
+	}
+	
+	ol, ul
+	{
+		list-style: square;
+	}
+	
+	ul.actions
+	{
+		text-align: center;
+	}
+		
+		ul.actions li
+		{
+		}
+	
+	p
+	{
+		line-height: 180%;
+	}
+	
+	strong
+	{
+	}
+	
+	a
+	{
+		text-decoration:none;
+	}
+	
+	a:hover
+	{
+		text-decoration: none;
+	}
+	
+	.container
+	{
+		overflow: hidden;
+		margin: 0em auto;
+		width: 90%;
+		margin-left: 20px;
+		margin-right: 20px;
+
+	}
+
+/*********************************************************************************/
+/* Heading Titles                                                                */
+/*********************************************************************************/
+
+	.title
+	{
+		margin-bottom: 3em;
+	}
+	
+	.title h2
+	{
+		font-size: 2.1em;
+	}
+	
+	.title .byline
+	{
+		font-size: 1.7em;
+		color: #6F6F6F;
+	}
+
+/*********************************************************************************/
+/* other stuff                                                                      */
+/*********************************************************************************/
+
+	#wrapper
+	{
+		background: #FFF;
+	}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header-wrapper
+	{
+		background: #333333;
+	}
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner
+	{
+		overflow: hidden;
+		padding: 3em 0em 1.5em 0em;
+		background: #202020;
+		background-size: cover;
+		text-align: center;
+		color: rgba(255,255,255,.8);
+	}
+
+	#banner .title
+	{
+		margin-bottom: 1em;
+	}
+
+	#banner .title h2
+	{
+		color: rgb(156,190,231);
+	}
+
+	#banner .title .byline
+	{
+		color: rgba(255,255,255,.6);
+	}
+	
+/*********************************************************************************/
+/* Featured                                                                      */
+/*********************************************************************************/
+
+	#extra
+	{
+		overflow: hidden;
+		padding: 5em 0em;
+	}
+	
+	.flex-footer {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.flex-footer > div {
+		color: white;
+		text-align: left;
+	}
+	
+	.flex-footer a {
+		color: white;
+	}
+
+	@media only screen and ( max-width: 700px ){
+
+	.flex-footer {
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		margin: 30px;
+	}
+	.flex-footer > div {
+		margin: 10px;
+	}
+	}
+
+	.flex-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+		padding: 0.1em 0em;
+	}
+
+	@media only screen and ( max-width: 920px ){
+
+	.flex-header {
+		justify-content: space-around;
+	}
+	}
+
+	@media only screen and ( max-width: 500px ){
+
+	.flex-header {
+		flex-direction: column;
+	}
+	}
+
+	.flex-header > div {
+		color: white;
+		text-align: left;
+	}
+
+	.menu
+	{
+		display: flex;
+		top: 2em;
+		right: 0;
+		margin-top: 15px;
+	}
+	
+	.menu ul
+	{
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.menu li
+	{
+		display: block;
+		float: left;
+		text-align: center;
+	}
+
+	@media only screen and ( max-width: 920px ){
+
+	.menu ul
+	{
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: column;
+	}
+	.menu li
+	{
+		display: flex;
+		float: left;
+		text-align: center;
+	}
+	}
+	
+	
+	.menu li a, #menu li span
+	{
+		padding: 1em 1.5em;
+		letter-spacing: 1px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 0.8em;
+		color: #FFF;
+	}
+	
+	.menu li:hover a, #menu li.active a, #menu li.active span
+	{
+		color: #FFF;
+	}
+	
+	.menu .current_page_item a
+	{
+		background: #009E2D;
+		color: #FFF;
+	}
+	
+	.menu .icon
+	{
+	}
+
+	.flex-general {
+		display: flex;
+		align-items: center;
+		justify-content: left;
+	}
+	.flex-general > div {
+		color: black;
+		text-align: left;
+	}
+
+	.flex-general2-header {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: flex-start;
+		position: relative;
+		border-top: solid #c0daf5;
+		border-bottom: solid #c0daf5;
+		background-color: #F0F0F0;
+		min-width: 550px;
+		max-width: 1080px;
+		height: 2.85em;
+		font-size: 1.1em;
+	}
+
+	.flex-general2-header > div {
+		flex: 1;
+		padding: 0.8em;
+		text-align: center;
+	}
+
+
+	.flex-general2 {
+		display: flex;
+		text-align: center;
+		justify-content: flex-start;
+		position: relative;
+		border-bottom: solid #c0daf5;
+		min-width: 550px;
+		max-width: 1080px;
+		font-size: 1.1em;
+	}
+
+	.flex-general2 > div {
+		flex: 1;
+		padding: 0.8em;
+		text-align: left;
+	}

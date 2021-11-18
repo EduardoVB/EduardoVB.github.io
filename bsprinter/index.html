@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177277067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177277067-1');
+</script>
+<meta charset="utf-8" />
+<title>BSPrinter: Print Preview for Visual Basic 6 (VB6)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BSPrinter is a component that adds Print Preview capability to Visual Basic 6 programs. It also adds other featues like printing flex grids and rich textboxes. On Windows 10 it can save PDF files." />
+<link href="http://fonts.googleapis.com/css?family=Varela" rel="stylesheet" />
+<link href="screen.css" rel="stylesheet" type="text/css" media="all" />
+<link href="slider.css" rel="stylesheet" type="text/css" media="all" />
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+</head>
+<body>
+<div id="wrapper">
+	<div id="header-wrapper">
+	<div class="flex-header">
+		<div style="flex-basis">
+			<a href="http://www.balkesoft.com"><img border="0" src="../img/bslogo_big_dark.png" width=280px></a>
+		</div>
+		<div style="flex-basis">
+		<div class="menu">
+			<ul>
+				<li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
+				<li><a href="download.html" accesskey="2" title="">Download</a></li>
+				<li><a href="docs/index.html" accesskey="3" title="">Documentation</a></li>
+				<li><a href="contact.html" accesskey="4" title="">Contact</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	</div>
+	<div id="banner">
+		<div class="container">
+			<div class="title">
+				<h2>BSPrinter provides print preview capability to Visual Basic 6</h2>
+				<span class="byline">You can use it in existing programs as well as in new ones</span>
+				<p style="color:rgba(255,255,255,.6);">Take VB6 printing system to another level, in some ways more modern than other languages</p>
+                        </div>
+		</div>
+	</div>
+	<div id="extra" class="container">
+		<h1 style="font-size:1.4em">BSPrinter Print Preview component for VB6</h1><br><br>
+		<h2>How it works:</h2><br>
+		<ul>
+			<li>Visual Basic has the <b>Printer</b> object for printing. This component makes a full and direct replacement of the original Printer object.</li>
+	                <li>It also provides a control that is added to the toolbox from which you can set properties of the dialogs and perform actions (like showing the <b>Print Preview dialog</b> through its <b>ShowPreview</b> function).</li>
+			<li>It is on an OCX file that must be registered on Windows.</li>
+                        <li>You can use existing printing code as long the code is taking into account the size of the page by checking <b>Printer.ScaleWidth</b> and <b>Printer.ScaleHeight</b> properties while printing, since the size of the pages can vary. If you code is not ready for that (to handle different page sizes), you will need to adapt it.</li>
+                        <li>Another feature is that now the margins and page numbers are handled by the component. You don't need to care about that, but with existing code, you may need to remove the part of the code that handles margins and page numbers (optionally you can set the component for not handling margins and/or page numbers).</li>
+			<li>It has a buit-in method for printing the content of <b>MSFlexGrid</b>, <b>MSHFlexGrid</b> and compatlble controls (<a href="docs/reference/printgrid_method.html">PrintGrid method</a>). It also offers some formatting options for printing the grid to the user in the Format dialog box (via a toolbar button).</li>
+			<li>It has a buit-in method for printing the content of <b>RichTextBox</b> controls <a href="docs/reference/printrichtextbox_method.html">PrintRichTextBox method</a>).</li>
+			<li>It is ready for the upcoming VB6 replacements <a href="https://www.twinbasic.com/">twinBASIC</a> and <a href="https://www.radbasic.dev/">RadBasic</a></li>.
+		</ul>
+                <br>
+		<h2>More info:</h2><br>
+		<ul>
+			<li>From the <a href="download.html">Download</a> page you can download the installer or the ocx alone.</li>
+			<li>To get help or to learn how to use it, please go to the <a href="docs/index.html">Documentation</a> page.</li>
+			<li>It is very simple to set up, and it allows many customizations, most of them through properties.</li>
+		</ul>
+	</div>
+
+<div style="text-align:center">
+	<h2><font size="6">Screen shots:</font></h2>
+        <br>
+</div>
+	
+ <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 7</div>
+    <img src="img/scr1.jpg" style="width:100%">
+    <div class="text">Preview dialog</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 7</div>
+    <img src="img/scr2.jpg" style="width:100%">
+    <div class="text">Print dialog</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 7</div>
+    <img src="img/scr3.jpg" style="width:100%">
+    <div class="text">Page setup dialog</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 7</div>
+    <img src="img/scr4.jpg" style="width:100%">
+    <div class="text">Format dialog</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 7</div>
+    <img src="img/scr5.jpg" style="width:100%">
+    <div class="text">Landscape</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 7</div>
+    <img src="img/scr6.jpg" style="width:100%">
+    <div class="text">Show several pages</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 7</div>
+    <img src="img/scr7.jpg" style="width:100%">
+    <div class="text">Menu</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <a>Click on the dots for other screen shots &nbsp;&nbsp;&#10095;&#10095;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+</div> 
+<br><br>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 
+</script>
+
+</div>
+<div class="flex-footer">
+  <div style="flex-basis:30%"><a href="http://www.balkesoft.com"><img src="../img/bslogo_small_dark.png" alt="www.balkesoft.com" border="0"></a></div>
+  <div style="flex-basis:20%"><a href="privacy-policy.html" title="">Privacy Policy</a></div>
+  <div style="flex-basis:20%">&copy; 2020-2021 Balkesoft</div>
+</div>
+</body>
+</html>

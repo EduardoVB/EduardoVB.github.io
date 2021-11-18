@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177277067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177277067-1');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<title>PrintPreview control</title>
+<meta name="DESCRIPTION" content="PrintPreview control" />
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+<header>
+  <br>
+  <a href="../../">Home</a> > <a href="../index.html">BSPrinter documentation</a> > <a href="index.html">Reference</a>
+  <br><br>
+</header>
+<h1>PrintPreview control</h1>
+<p>This is the main object of the component.<br>
+<br>
+To have print preview in a program you need to do these simple steps:<br>
+<br>
+Add the necessary code to replace the Printer object to a bas module:<br>
+<pre>
+Public Property Get Printer() As Printer
+    Set Printer = BSPrinter.PrinterReplacement
+End Property
+
+Public Property Set Printer(nPrinter As Printer)
+    Set BSPrinter.PrinterReplacement = nPrinter
+End Property
+</pre><br>
+<br>
+Then add a <b>PrintPreview</b> control to a form.<br>
+Double click on the control, and write this code:<br>
+<br>
+<pre>
+Private Sub PrintPreview1_PrepareReport(Cancel As Boolean)
+    MyPrintingProcedure
+End Sub
+
+Private Sub MyPrintingProcedure()
+    Printer.Print "Hello Word"
+    ' continue with the printing code
+End Sub
+</pre><br>
+<br>
+Then add a command button (Command1) and this code:<br>
+<br>
+<pre>
+Private Sub Command1_Click()
+    PrintPreview1.ShowPreview
+End Sub
+</pre></p><br>
+<li class="toc1"><a href="#ilink1">Properties</a></li><li class="toc1"><a href="#ilink2">Methods</a></li><li class="toc1"><a href="#ilink3">Events</a></li><br><h2><a name="ilink1" /><p class="section">Properties</p></a></h2>
+<a href="allowuserchangemargins_property.html">AllowUserChangeMargins</a><br>
+<a href="allowuserchangeorientation_property.html">AllowUserChangeOrientation</a><br>
+<a href="allowuserchangepagenumbers_property.html">AllowUserChangePageNumbers</a><br>
+<a href="allowuserchangepapersize_property.html">AllowUserChangePaperSize</a><br>
+<a href="allowuserchangeprinter_property.html">AllowUserChangePrinter</a><br>
+<a href="allowuserchangescale_property.html">AllowUserChangeScale</a><br>
+<a href="auxiliarybuttontooltiptext_property.html">AuxiliaryButtonToolTipText</a><br>
+<a href="auxiliarybuttonvisible_property.html">AuxiliaryButtonVisible</a><br>
+<a href="bottommargin_property.html">BottomMargin</a><br>
+<a href="bottommargineffective_property.html">BottomMarginEffective</a><br>
+<a href="bottomnonprintablearea_property.html">BottomNonPrintableArea</a><br>
+<a href="canceled_property.html">Canceled</a><br>
+<a href="collate_property.html">Collate</a><br>
+<a href="colorsupport_property.html">ColorSupport</a><br>
+<a href="currentpageinpreview_property.html">CurrentPageInPreview</a><br>
+<a href="flags_property.html">Flags</a><br>
+<a href="fontkerning_property.html">FontKerning</a><br>
+<a href="fontwidth_property.html">FontWidth</a><br>
+<a href="formatbuttonvisible_property.html">FormatButtonVisible</a><br>
+<a href="frompage_property.html">FromPage</a><br>
+<a href="gdiplusgraphics_property.html">GDIPlusGraphics</a><br>
+<a href="gridreportstyles_property.html">GridReportStyles</a><br>
+<a href="handlemargins_property.html">HandleMargins</a><br>
+<a href="leftmargin_property.html">LeftMargin</a><br>
+<a href="leftnonprintablearea_property.html">LeftNonPrintableArea</a><br>
+<a href="letprintexceedmargin_property.html">LetPrintExceedMargin</a><br>
+<a href="marginsbuttonvisible_property.html">MarginsButtonVisible</a><br>
+<a href="marginunits_property.html">MarginUnits</a><br>
+<a href="marginunitsforuser_property.html">MarginUnitsForUser</a><br>
+<a href="maxscalepercent_property.html">MaxScalePercent</a><br>
+<a href="menubuttonicon_property.html">MenuButtonIcon</a><br>
+<a href="menubuttonvisible_property.html">MenuButtonVisible</a><br>
+<a href="minbottommargin_property.html">MinBottomMargin</a><br>
+<a href="minleftmargin_property.html">MinLeftMargin</a><br>
+<a href="minrightmargin_property.html">MinRightMargin</a><br>
+<a href="minscalepercent_property.html">MinScalePercent</a><br>
+<a href="mintopmargin_property.html">MinTopMargin</a><br>
+<a href="pagecount_property.html">PageCount</a><br>
+<a href="pagenumberscolor_property.html">PageNumbersColor</a><br>
+<a href="pagenumbersfont_property.html">PageNumbersFont</a><br>
+<a href="pagenumbersformat_property.html">PageNumbersFormat</a><br>
+<a href="pagenumbersposition_property.html">PageNumbersPosition</a><br>
+<a href="pagenumberspositionflags_property.html">PageNumbersPositionFlags</a><br>
+<a href="pagesetupbuttonvisible_property.html">PageSetupButtonVisible</a><br>
+<a href="pageview_property.html">PageView</a><br>
+<a href="pageviewnormalsizebuttonvisible_property.html">PageViewNormalSizeButtonVisible</a><br>
+<a href="previewdialogcaption_property.html">PreviewDialogCaption</a><br>
+<a href="previewpagesaccuracy_property.html">PreviewPagesAccuracy</a><br>
+<a href="printed_property.html">Printed</a><br>
+<a href="printpagenumbers_property.html">PrintPageNumbers</a><br>
+<a href="quickprintbuttonvisible_property.html">QuickPrintButtonVisible</a><br>
+<a href="rememberuserpreferences_property.html">RememberUserPreferences</a><br>
+<a href="reportid_property.html">ReportID</a><br>
+<a href="reportname_property.html">ReportName</a><br>
+<a href="rightmargin_property.html">RightMargin</a><br>
+<a href="rightnonprintablearea_property.html">RightNonPrintableArea</a><br>
+<a href="righttoleftcontrol_property.html">RightToLeftControl</a><br>
+<a href="scalepercent_property.html">ScalePercent</a><br>
+<a href="showbottomtoolbar_property.html">ShowBottomToolbar</a><br>
+<a href="showfirstpagenumber_property.html">ShowFirstPageNumber</a><br>
+<a href="showmargins_property.html">ShowMargins</a><br>
+<a href="showsketch_property.html">ShowSketch</a><br>
+<a href="somethingprintedonpage_property.html">SomethingPrintedOnPage</a><br>
+<a href="somethingprintedonreport_property.html">SomethingPrintedOnReport</a><br>
+<a href="startingpagenumber_property.html">StartingPageNumber</a><br>
+<a href="toolbarbuttonpicture_property.html">ToolbarButtonPicture</a><br>
+<a href="toolbariconssize_property.html">ToolbarIconsSize</a><br>
+<a href="topage_property.html">ToPage</a><br>
+<a href="topmargin_property.html">TopMargin</a><br>
+<a href="topmargineffective_property.html">TopMarginEffective</a><br>
+<a href="topnonprintablearea_property.html">TopNonPrintableArea</a><br>
+<a href="uibuttonstyle_property.html">UIButtonStyle</a><br>
+<a href="uifontname_property.html">UIFontName</a><br>
+<a href="uilanguage_property.html">UILanguage</a><br>
+<a href="usealtscaleicons_property.html">UseAltScaleIcons</a><br>
+<br><h2><a name="ilink2" /><p class="section">Methods</p></a></h2>
+<a href="addwatermark_method.html">AddWatermark</a><br>
+<a href="clearpage_method.html">ClearPage</a><br>
+<a href="deletealluserpreferences_method.html">DeleteAllUserPreferences</a><br>
+<a href="deleteuserpreferences_method.html">DeleteUserPreferences</a><br>
+<a href="getcurrentgridreportstyle_method.html">GetCurrentGridReportStyle</a><br>
+<a href="getdocfirstpageindex_method.html">GetDocFirstPageIndex</a><br>
+<a href="getdoclastpageindex_method.html">GetDocLastPageIndex</a><br>
+<a href="getdocpagecount_method.html">GetDocPageCount</a><br>
+<a href="getfooterpos_method.html">GetFooterPos</a><br>
+<a href="getheaderpos_method.html">GetHeaderPos</a><br>
+<a href="getlastdevicename_method.html">GetLastDeviceName</a><br>
+<a href="getpagenumber_method.html">GetPageNumber</a><br>
+<a href="getpagenumberpos_method.html">GetPageNumberPos</a><br>
+<a href="gotopage_method.html">GoToPage</a><br>
+<a href="printdirect_method.html">PrintDirect</a><br>
+<a href="printerexists_method.html">PrinterExists</a><br>
+<a href="printex_method.html">PrintEx</a><br>
+<a href="printform_method.html">PrintForm</a><br>
+<a href="printgrid_method.html">PrintGrid</a><br>
+<a href="printrichtextbox_method.html">PrintRichTextBox</a><br>
+<a href="printwindow_method.html">PrintWindow</a><br>
+<a href="removeallwatermarks_method.html">RemoveAllWatermarks</a><br>
+<a href="removepage_method.html">RemovePage</a><br>
+<a href="removewatermark_method.html">RemoveWatermark</a><br>
+<a href="savetofile_method.html">SaveToFile</a><br>
+<a href="selectprinter_method.html">SelectPrinter</a><br>
+<a href="setfooter_method.html">SetFooter</a><br>
+<a href="setheader_method.html">SetHeader</a><br>
+<a href="showformatoptions_method.html">ShowFormatOptions</a><br>
+<a href="showpagenumbersoptions_method.html">ShowPageNumbersOptions</a><br>
+<a href="showpagesetup_method.html">ShowPageSetup</a><br>
+<a href="showpreview_method.html">ShowPreview</a><br>
+<a href="showprinter_method.html">ShowPrinter</a><br>
+<a href="showsavetofile_method.html">ShowSaveToFile</a><br>
+<a href="textheightex_method.html">TextHeightEx</a><br>
+<a href="textwidthex_method.html">TextWidthEx</a><br>
+<br><h2><a name="ilink3" /><p class="section">Events</p></a></h2>
+<a href="aftershowingpagesetupdialog_event.html">AfterShowingPageSetupDialog</a><br>
+<a href="aftershowingprinterdialog_event.html">AfterShowingPrinterDialog</a><br>
+<a href="auxiliarybuttonclick_event.html">AuxiliaryButtonClick</a><br>
+<a href="beforeprint_event.html">BeforePrint</a><br>
+<a href="beforeprintingpagenumbers_event.html">BeforePrintingPageNumbers</a><br>
+<a href="beforeshowingformatdialog_event.html">BeforeShowingFormatDialog</a><br>
+<a href="beforeshowingpagesetupdialog_event.html">BeforeShowingPageSetupDialog</a><br>
+<a href="beforeshowingprinterdialog_event.html">BeforeShowingPrinterDialog</a><br>
+<a href="currentprinterdefaultsettingchange_event49.html">CurrentPrinterDefaultSettingChange</a><br>
+<a href="defaultprinterchange_event46.html">DefaultPrinterChange</a><br>
+<a href="enddoc_event.html">EndDoc</a><br>
+<a href="getlocalizedtext_event.html">GetLocalizedText</a><br>
+<a href="orientationchange_event.html">OrientationChange</a><br>
+<a href="papersizechange_event.html">PaperSizeChange</a><br>
+<a href="preparereport_event.html">PrepareReport</a><br>
+<a href="reportprinted_event.html">ReportPrinted</a><br>
+<a href="scalechange_event.html">ScaleChange</a><br>
+<a href="startdoc_event.html">StartDoc</a><br>
+<a href="startpage_event.html">StartPage</a><br>
+<br><br><br>
+<div class="flex-footer">
+  <div style="flex-basis:40%"><a href="http://www.balkesoft.com"><img src="bslogo.png" alt="www.balkesoft.com" border="0"></a></div>
+  <div style="flex-basis:40%">&copy; 2020-2021 Balkesoft</div>
+</div>
+</body>
+</html>
