@@ -1,3 +1,6 @@
+Release 2021-11-29:
+- changed aesthetic  detail on toolbar
+- fixed minor bug: Message appeared twice in SaveToFile method to indicate that the requested printer driver was not installed.
 Release 2021-10-31:
 - Bux fix in PrintQuality setting when the value is not supported by the device.
 Release 2021-10-21:
