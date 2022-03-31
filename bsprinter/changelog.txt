@@ -1,24 +1,41 @@
+Release 2022-03-31:
+- page count limit removed, it is limited by computer resources now.
+- fixed bug when user attempting to change margins not working.
+- fixed bug in PrintGrid, in some situations it changed the font size to the grid control in the client program.
+- fixed clipping issue with Word Break
+- fixed clipping issue in PrintGrid when the grid has CellPictures
+- added the event EnsureGridCellFormat thal mainly serves for the client program to ensure that the CellPicture is properly set (if needed) in that cell.
+
 Release 2021-11-29:
 - changed aesthetic  detail on toolbar
 - fixed minor bug: Message appeared twice in SaveToFile method to indicate that the requested printer driver was not installed.
+
 Release 2021-10-31:
 - Bux fix in PrintQuality setting when the value is not supported by the device.
+
 Release 2021-10-21:
 - Improvement in Printers collection.
+
 Release 2021-09-23:
 - Minor corrections in License property page.
+
 Release 2021-09-07:
 - Improvement in PrintWindow method, when printing controls that are partially or not visible on the form.
 - Internal code improvements related to remove dependency on VB6 (now it uses APIs for some things it previously relied on VB6 DLLs).
+
 Release 2021-08-07:
 - Added global Printer object and Printers collection.
+
 Release 2021-08-04:
 - Removed "Demo" note when used from class modules and bas modules.
+
 Release 2021-08-03:
 - Fixed bug when used from non-VB6 environments, added check for App.NonModalAllowed.
+
 Release 2021-06-09:
 - Samples projects updated
 - Fix regarding Page numbers font when scale was < 40%
+
 Release 2021-05-18:
 - Now the Printer.Print method supports Unicode
 - Fixed bug in Print method regarding tabs positions when ScaleLeft <> 0
