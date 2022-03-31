@@ -4,7 +4,7 @@ Release 2022-03-31:
 - fixed bug in PrintGrid, in some situations it changed the font size to the grid control in the client program.
 - fixed clipping issue with Word Break
 - fixed clipping issue in PrintGrid when the grid has CellPictures
-- added the event EnsureGridCellFormat thal mainly serves for the client program to ensure that the CellPicture is properly set (if needed) in that cell.
+- added the event EnsureGridCellFormat that mainly serves for the client program to ensure that the CellPicture is properly set (if needed) in that cell.
 
 Release 2021-11-29:
 - changed aesthetic  detail on toolbar
