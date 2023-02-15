@@ -1,3 +1,12 @@
+Release 2023-02-15:
+- Removed the need of entering a license.
+- Fixed bug with RightToLeft grids.
+- Added support for printing the DataGrid control and other non-flexgrids that use DataSource.
+- Fixed bug in Print Preview dialog menu in Right-To-Left locale GUI.
+- Fixed bug in Format dialog with Right-To-Left locale GUI.
+- Fixed issue with the PrintPreview dialog icon.
+- Improved compatibility with non-VB6 environments.
+
 Release 2022-03-31:
 - page count limit removed, it is limited by computer resources now.
 - fixed bug when user attempting to change margins not working.
