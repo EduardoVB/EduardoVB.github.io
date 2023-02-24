@@ -1,3 +1,7 @@
+Release 2023-02-24:
+- Fixed bug printing the DataGrid control.
+- Now it can print a Recordset with the PrintGrid method sending it in the 'Grid' parameter. 
+
 Release 2023-02-15:
 - Removed the need of entering a license.
 - Fixed bug with RightToLeft grids.
