@@ -1,3 +1,6 @@
+Release 2023-06-14:
+- Added property PrinterError. Now if the last printing action resulted in an error (that might be due to an user cancelation), it does not raise an error anymore, but this property is set to True.
+
 Release 2023-02-24:
 - Fixed bug printing the DataGrid control.
 - Now it can print a Recordset with the PrintGrid method sending it in the 'Grid' parameter. 
