@@ -1,3 +1,11 @@
+Release 2026-07-09:
+- Fixed bug in PrintGrid (cells not merged properly in some particular settings)
+- Fixed bug related to printer default font.
+- Removed embed typelib for Printer interface and global Printer object.
+- Changed function ColorsBlended to MixColor (internally)
+- OLE version changed to 3.0
+- Fix when cells are merged.
+
 Release 2023-06-14:
 - Added property PrinterError. Now if the last printing action resulted in an error (that might be due to an user cancelation), it does not raise an error anymore, but this property is set to True.
 
